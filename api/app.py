@@ -9,7 +9,7 @@ app = FastAPI(
 )
 
 
-generator = Generator()
+generator = None
 
 
 class Question(BaseModel):
@@ -26,11 +26,12 @@ def home():
 
 @app.post("/ask")
 def ask_question(question: Question):
+    global generator
 
-    answer = generator.generate(
-        question.query,
-        question.top_k
-    )
+    if generator is None:
+        generator = Generator()
+
+    answer = generator.generate(question.query, question.top_k)
 
     return {
         "question": question.query,
