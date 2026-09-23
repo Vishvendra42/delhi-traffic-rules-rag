@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_URL = "http://localhost:8000"
+API_URL = "https://delhi-traffic-rules-rag.onrender.com/ask"
 
 st.set_page_config(
     page_title="Delhi Traffic Assistant",
