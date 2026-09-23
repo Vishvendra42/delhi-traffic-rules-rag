@@ -1,8 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from src.generator import Generator
-
 
 app = FastAPI(
     title="Delhi Traffic Rules Assistant"
@@ -29,9 +27,13 @@ def ask_question(question: Question):
     global generator
 
     if generator is None:
+        from src.generator import Generator
         generator = Generator()
 
-    answer = generator.generate(question.query, question.top_k)
+    answer = generator.generate(
+        question.query,
+        question.top_k
+    )
 
     return {
         "question": question.query,
