@@ -1,0 +1,74 @@
+{
+  "verified": [
+    {
+      "topic": "driving_without_license",
+      "source_authority": "Delhi Traffic Police",
+      "source_type": "official_penalty_table",
+      "dynamic": false
+    },
+    {
+      "topic": "helmet_violation",
+      "source_authority": "Delhi Traffic Police",
+      "source_type": "official_penalty_table",
+      "dynamic": false
+    },
+    {
+      "topic": "seat_belt_violation",
+      "source_authority": "Delhi Traffic Police",
+      "source_type": "official_penalty_table",
+      "dynamic": false
+    },
+    {
+      "topic": "insurance_violation",
+      "source_authority": "Delhi Traffic Police",
+      "source_type": "official_penalty_table",
+      "dynamic": false
+    },
+    {
+      "topic": "pucc_violation",
+      "source_authority": "Delhi Traffic Police",
+      "source_type": "official_penalty_table",
+      "dynamic": false
+    },
+    {
+      "topic": "triple_riding",
+      "source_authority": "Delhi Traffic Police",
+      "source_type": "official_penalty_table",
+      "dynamic": false
+    }
+  ],
+
+  "needs_verification": [
+    "compounding_authority_rank",
+    "echallan_72_hour_support_rule",
+    "child_booster_seat_penalty",
+    "breath_analyser_refusal_procedure",
+    "driving_license_appeal_procedure",
+    "lok_adalat_procedure",
+    "temporary_permit_expiry_penalty",
+    "fake_registration_plate_criminal_procedure",
+    "automatic_vahan_invalidation",
+    "exact_pucc_validity_by_vehicle_category",
+    "exact_roadwise_speed_limits",
+    "exact_grap_vehicle_exemptions"
+  ],
+
+  "dynamic": [
+    "GRAP_restrictions",
+    "traffic_advisories",
+    "road_closures",
+    "temporary_no_entry_orders",
+    "current_compounding_schedule",
+    "current_Lok_Adalat_schedule"
+  ],
+
+  "high_risk": [
+    "arrest_claims",
+    "criminal_prosecution_claims",
+    "automatic_registration_cancellation",
+    "automatic_Vahan_invalidation",
+    "vehicle_seizure_claims",
+    "specific_legal_deadlines",
+    "specific_procedural_email_addresses"
+  ]
+}

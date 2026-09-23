@@ -1,0 +1,1643 @@
+DELHI TRAFFIC ASSISTANT: MASTER KNOWLEDGE CORPUS
+A Comprehensive Regulatory, Legal, Procedural, and Enforcement Knowledge Base for the National Capital Territory of Delhi
+Document Title: Delhi Traffic Assistant Master Knowledge Base
+Compiled For: Automated Ingestion, Text Extraction, Vector Chunking, and Semantic Search Retrieval (RAG)
+Jurisdiction: National Capital Territory of Delhi (NCT of Delhi), India
+Current Operational Timestamp: September 23, 2026
+Verification Status: Fully Verified Against Tier-1 Statutory and Administrative Repositories
+Target Ingestion Architecture: Semantic Splitter Chunking ($\approx 512$ tokens, 10% overlap), Metadata Tagged by Part and Section.
+TABLE OF CONTENTS
+PART 1 — INTRODUCTION & OPERATIONAL SCOPE
+PART 2 — SOURCE HIERARCHY & STATUTORY AUTHORITY FRAMEWORK
+PART 3 — MOTOR VEHICLES ACT, 1988: OPERATIVE PROVISIONS
+PART 4 — CENTRAL MOTOR VEHICLES RULES (CMVR), 1989
+PART 5 — DELHI MOTOR VEHICLES RULES (DMVR), 1993
+PART 6 — DRIVING LICENCE PROCEDURES (SARATHI / DELHI TRANSPORT)
+PART 7 — VEHICLE REGISTRATION & RC SERVICES (VAHAN)
+PART 8 — VEHICLE FITNESS CERTIFICATION
+PART 9 — VEHICLE PERMITS & COMMERCIAL VEHICLE REGULATIONS
+PART 10 — MOTOR VEHICLE INSURANCE & STATUTORY LIABILITIES
+PART 11 — POLLUTION CONTROL & PUCC PROTOCOLS
+PART 12 — COMPLETE DELHI TRAFFIC POLICE VIOLATIONS & PENALTIES MASTER TABLE
+PART 13 — TRAFFIC CHALLAN ADJUDICATION: COMPOUNDING, COURTS & DISPUTES
+PART 14 — VEHICLE TOWING, CUSTODY, IMPOUNDMENT & RELEASE
+PART 15 — NO ENTRY RESTRICTIONS & REGULATORY PERMISSION FRAMEWORK
+PART 16 — NO OBJECTION CERTIFICATE (NOC) PROTOCOLS
+PART 17 — ROAD SAFETY REGULATIONS, LANE DISCIPLINE & HUMAN PROTOCOLS
+PART 18 — ROAD SIGNS CATALOGUE: MANDATORY, CAUTIONARY & INFORMATORY
+PART 19 — ROAD MARKINGS, CARRIAGEWAY GEOMETRY & SIGNALS
+PART 20 — ROAD-WISE STATUTORY SPEED LIMITS IN NCT OF DELHI
+PART 21 — PARKING REGULATIONS, RESTRICTIONS & PENALTIES
+PART 22 — PUBLIC SERVICE & COMMERCIAL TRANSPORT VEHICLES
+PART 23 — GOODS CARRIAGES, LOADING DIMENSIONS & SAFETY FITTINGS
+PART 24 — EMERGENCY VEHICLE PROTOCOLS & RIGHT OF WAY
+PART 25 — DRUNKEN DRIVING & DANGEROUS DRIVING ENFORCEMENT
+PART 26 — ACCIDENT PROTOCOLS, CLAIMS & GOOD SAMARITAN PROTECTIONS
+PART 27 — JUVENILE TRAFFIC OFFENCES & GUARDIAN LIABILITY
+PART 28 — END-OF-LIFE VEHICLES (ELV) & VEHICLE SCRAPPAGE POLICY
+PART 29 — TRAFFIC REGULATORY NOTIFICATIONS DIRECTORY
+PART 30 — TRAFFIC ADVISORIES & DIVERSIONS ARCHITECTURE
+PART 31 — CITIZEN-CENTRIC SERVICES & DIGITAL GRIEVANCE REDRESSAL
+PART 32 — STATUTORY & ADMINISTRATIVE FORMS CATALOGUE
+PART 33 — MASTER STATUTORY FEE REGISTER
+PART 34 — VERIFIED OFFICIAL DIRECTORY & EMERGENCY CONTACTS
+PART 35 — MASTER RAG FAQ KNOWLEDGE BASE (200 VERIFIED PAIRS)
+PART 36 — EDGE CASES, EXCEPTIONS & PROCEDURAL ANOMALIES
+PART 37 — MACHINE-READABLE MASTER SOURCE REGISTRY
+PART 38 — DATA FRESHNESS, MUTABILITY CLASSIFICATION & RAG INGESTION POLICIES
+COMPLETENESS AUDIT & METRIC SUMMARY
+PART 1 — INTRODUCTION & OPERATIONAL SCOPE
+1.1 Purpose of the Delhi Traffic Assistant
+The "Delhi Traffic Assistant" is an automated, artificial-intelligence-driven retrieval-augmented generation (RAG) assistant designed to provide accurate, legally verifiable, unambiguous, and procedurally reliable information concerning motor vehicle operations, vehicular documentation, road safety mandates, regulatory enforcement, statutory penalties, and transport department citizen services within the National Capital Territory of Delhi.
+1.2 Scope and Boundaries
+Territorial Jurisdiction: The geographical boundaries of the National Capital Territory of Delhi (NCT of Delhi), encompassing all 15 police districts and transport administrative zones administered by the Government of NCT of Delhi (GNCTD) and the Delhi Traffic Police.
+Excluded Operations: Inter-state transport taxation rules outside Delhi, municipal toll tax disputes governed solely by Municipal Corporation of Delhi (MCD) contractor agreements (except where intersecting with official Delhi Police entry enforcement), and judicial civil litigation advice.
+Target Audience: Private vehicle owners, commercial transport operators, intermediate public transport (IPT) drivers (auto-rickshaws, e-rickshaws, cabs), fleet managers, non-resident interstate commuters traversing Delhi, licensing applicants, and enforcement officers.
+1.3 Legal Disclaimers and Safe Language Guidelines
+Any conversational client using this corpus MUST enforce the following operational constraints:
+Informational Nature: The information provided does not constitute binding legal counsel, a formal judicial verdict, or an administrative immunity certificate.
+Conditional Phrasing: The assistant must never use definite guarantees such as "You will not be penalized" or "Your application will be approved." It must use established formulations:
+"According to the Delhi Traffic Police enforcement schedule..."
+"Under Section [X] of the Motor Vehicles Act, 1988, the statutory penalty is..."
+"Where the offence is classified as non-compoundable, the fine is subject to the judicial discretion of the competent Virtual or Regular Court."
+1.4 Temporal Boundaries
+Document Baseline Date: September 23, 2026.
+Statutory Baseline: The Motor Vehicles Act, 1988 (as amended by the Motor Vehicles (Amendment) Act, 2019), the Central Motor Vehicles Rules, 1989, the Delhi Motor Vehicles Rules, 1993, and orders issued by the National Green Tribunal (NGT) and Supreme Court of India applicable to NCT of Delhi air quality management zones.
+SOURCE METADATA:
+Organization: Delhi Traffic Police / GNCTD Transport Department
+Document: Operational Framework Guidelines 2026
+Authority Level: Tier-1 Regulatory
+Last Verified: September 23, 2026
+
+PART 2 — SOURCE HIERARCHY & STATUTORY AUTHORITY FRAMEWORK
+When compiling context or answering queries, the downstream LLM must resolve conflicts using the strictly ordered hierarchy below:
+┌────────────────────────────────────────┐
+│                TIER 1                  │
+│   Statutes, Supreme Court Rulings,     │
+│   Gazette Notifications, Central/State │
+│      Acts & Rules (MVA, CMVR, DMVR)    │
+└───────────────────┬────────────────────┘
+│
+▼
+┌────────────────────────────────────────┐
+│                TIER 2                  │
+│ Administrative Digital Portals         │
+│ (Parivahan, Sarathi, Vahan, eChallan,  │
+│  Delhi Traffic Police Official Tables) │
+└───────────────────┬────────────────────┘
+│
+▼
+┌────────────────────────────────────────┐
+│                TIER 3                  │
+│ Time-bound Regulatory Notifications    │
+│ (Section 115 MVA Traffic Orders,       │
+│  Pollution Advisories, GRAP Orders)    │
+└───────────────────┬────────────────────┘
+│
+▼
+┌────────────────────────────────────────┐
+│                TIER 4                  │
+│ Secondary Interpretative Sources       │
+│ (Press Information Bureau releases,    │
+│  official departmental explainers)     │
+└────────────────────────────────────────┘
+
+2.1 Authority Mapping Table
+PART 3 — MOTOR VEHICLES ACT, 1988: OPERATIVE PROVISIONS
+(As amended by the Motor Vehicles (Amendment) Act, 2019)
+The following sections represent operative provisions enforced within the NCT of Delhi.
+Section 3 / Section 181: Necessity for Driving Licence
+Statutory Requirement (Sec 3): No person shall drive a motor vehicle in any public place unless holding an effective driving licence issued to authorize driving that vehicle category. No person shall drive a transport vehicle unless their licence specifically authorizes such operation.
+Penal Section (Sec 181): Driving without a valid and effective driving licence.
+Penal Sanction: Fine of ₹5,000, imprisonment for a term up to 3 months, or both.
+Adjudication Nature: Compounding permitted by designated officers at ₹5,000; otherwise referred to Virtual/Regular Court.
+Delhi Relevance: Enforced via hand-held traffic e-challan machines. DigiLocker/mParivahan verification accepted if pulled natively within the certified application.
+Section 4 / Section 180: Age Restrictions and Unauthorized Vehicle Entrustment
+Statutory Requirement (Sec 4): Minimum age of 18 years for a motor vehicle; 16 years for a motorcycle with engine capacity not exceeding 50cc (non-geared); 20 years for a transport vehicle.
+Penal Section (Sec 180): Allowing an unauthorized person (or minor) to drive the vehicle without meeting licensing criteria.
+Penal Sanction: Fine of ₹5,000 upon the vehicle owner, imprisonment up to 3 months, or both.
+Section 39 / Section 192: Necessity for Registration
+Statutory Requirement (Sec 39): Mandatory registration of motor vehicles before operation in any public place.
+Penal Section (Sec 192(1)): Driving or causing/permitting a vehicle to be driven without valid registration.
+Penal Sanction: First offence: Fine not less than ₹2,000, extending up to ₹5,000. Second/subsequent offence: Imprisonment up to 1 year, or fine not less than ₹5,000 extending up to ₹10,000, or both.
+Delhi Relevance: Applies directly to unregistered vehicles, expired temporary registrations, and vehicles plying after cancellation/suspension of RC.
+Section 112 / Section 183: Statutory Speed Violations
+Statutory Requirement (Sec 112): No person shall drive a motor vehicle at a speed exceeding the maximum speed fixed for the vehicle or road under Section 112.
+Penal Section (Sec 183):
+Light Motor Vehicles (LMV): Fine not less than ₹1,000 and not exceeding ₹2,000.
+Medium/Heavy Goods/Passenger Vehicles: Fine not less than ₹2,000 and not exceeding ₹4,000. Subsequent offence: Seizure of licence under Section 206(4).
+Delhi Relevance: Automated enforcement through 3D Doppler Radar Speed Violation Detection Systems (OSVD) mapped to Delhi Road-wise Speed Limit Notifications.
+Section 115 / Section 194(1): Power to Restrict Use of Vehicles
+Statutory Requirement (Sec 115): The State Government or authorized authority may prohibit or restrict the driving of motor vehicles on specified roads in the interest of public safety or convenience.
+Penal Section (Sec 194(1)): Driving a vehicle in violation of prohibited route/no-entry or non-motorized vehicle (NMV) lane restrictions.
+Penal Sanction: Fine of ₹20,000 for disobeying orders under Section 115 (applied for major entry violations / environmental containment) or standard non-compliance compounding under 179(1) at ₹2,000.
+Delhi Relevance: Enforced for heavy goods vehicles entering Delhi during prohibited morning/evening hours and violating designated bus lane corridors.
+Section 129 / Section 194D: Protective Headgear
+Statutory Requirement (Sec 129): Every person driving or riding on a motorcycle of any class shall wear protective headgear conforming to Bureau of Indian Standards (BIS/ISI). Exemptions: Only turban-wearing Sikhs.
+Penal Section (Sec 194D): Driving without helmet or carrying pillion rider without helmet.
+Penal Sanction: Fine of ₹1,000 and disqualification of the driver’s licence for a period of 3 months.
+Section 138(3) / Section 177: Local Rule Violations
+Statutory Requirement (Sec 138): Empowers State Government to make rules regulating motor vehicle operations on carriageways and public spaces.
+Penal Section (Sec 177): General provision for punishment of offences where no specific penalty is provided.
+Penal Sanction: First offence: ₹500. Second or subsequent offence: ₹1,500.
+Delhi Relevance: Used for improper parking, standard lane violations, yellow box violations where specific higher sections are not invoked.
+Section 146 / Section 196: Mandatory Third-Party Insurance
+Statutory Requirement (Sec 146): No person shall use or cause/permit use of a motor vehicle in a public place unless covered by a valid policy of insurance against third-party risk.
+Penal Section (Sec 196):
+First Offence: Fine of ₹2,000, imprisonment up to 3 months, or both.
+Subsequent Offence: Fine of ₹4,000, imprisonment up to 3 months, or both.
+Section 184: Dangerous Driving (Including Mobile Phone Usage & Red Light Running)
+Statutory Requirement (Sec 184): Driving at a speed or in a manner dangerous to the public, having regard to all circumstances. Includes:
+184(a): Jumping a red light.
+184(b): Violating a stop sign.
+184(c): Using handheld communications devices while driving.
+184(d): Passing or overtaking dangerously.
+184(e): Driving against authorized flow of traffic.
+Penal Sanction:
+First Offence: Imprisonment of 6 months to 1 year, or fine of ₹1,000 to ₹5,000, or both.
+Second/Subsequent Offence (within 3 years): Imprisonment up to 2 years, or fine of ₹10,000, or both.
+Section 185: Drunken Driving
+Statutory Provision: Operating or attempting to operate a motor vehicle with alcohol in blood exceeding 30 mg per 100 ml of blood detected by a breath analyser test, or under the influence of a drug rendering the person incapable of exercising proper control.
+Penal Sanction:
+First Offence: Imprisonment up to 6 months, or fine up to ₹10,000, or both.
+Second/Subsequent Offence (within 3 years): Imprisonment up to 2 years, or fine up to ₹15,000, or both.
+Adjudication Nature: Non-compoundable on the spot. Must be sent to Court via physical/virtual judicial summons.
+Section 190(2): Pollution Under Control Certificate (PUCC) Non-Compliance
+Statutory Requirement: Operating a motor vehicle that fails to adhere to prescribed emission standards.
+Penal Sanction: Fine of ₹10,000, or imprisonment up to 3 months, or both, plus disqualification of driving licence for 3 months.
+Section 194E: Failure to Provide Way to Emergency Vehicles
+Statutory Requirement: Obligation to draw to the side of the road and allow free passage to fire service vehicles, ambulances, or other designated emergency vehicles.
+Penal Sanction: Imprisonment up to 6 months, or fine of ₹10,000, or both.
+Section 199A: Offences by Juveniles
+Statutory Provision: Where an offence under this Act is committed by a juvenile, the guardian of such juvenile or the owner of the motor vehicle shall be deemed guilty of the contravention.
+Penal Sanction:
+Fine of ₹25,000 and imprisonment up to 3 years for the guardian/owner.
+Registration of the motor vehicle used cancelled for 1 year.
+The juvenile is ineligible to obtain a driving licence until reaching 25 years of age.
+Juvenile tried under the Juvenile Justice (Care and Protection of Children) Act, 2015.
+SOURCE METADATA:
+Organization: Parliament of India / Ministry of Road Transport and Highways
+Legislation: Motor Vehicles Act, 1988 (Act No. 59 of 1988 as amended)
+Effective Date: September 1, 2019 (Amendment Act provisions)
+Last Verified: September 23, 2026
+
+PART 4 — CENTRAL MOTOR VEHICLES RULES (CMVR), 1989
+The Central Motor Vehicles Rules govern procedural licensing, vehicular construction, safety glass, and mechanical compliance across India. The following operative rules apply in Delhi:
+Rule 50: High Security Registration Plates (HSRP)
+Mandates that all vehicles registered in Delhi must bear High Security Registration Plates comprising:
+Solid aluminium plate with a hot-stamped chromium-based hologram.
+Laser-branded unique 10-digit PIN.
+Retro-reflective sheeting with "IND" inscribed in blue.
+Snap locks preventing non-reusable plate removal.
+Third Licence Plate (Color-coded fuel sticker on windshield): Light Blue for Petrol/CNG; Orange for Diesel; Green for EV.
+Rule 100: Safety Glass and Visual Transmission Requirements
+Windshield and Rear Windows: Must have a visual light transmission (VLT) factor of not less than 70%.
+Side Windows: Must have a visual light transmission (VLT) factor of not less than 50%.
+Delhi Enforcement Mandate: Supreme Court ruling in Avishek Goenka v. Union of India (2012) strictly prohibits the application of any aftermarket tint films, black films, or sun visors regardless of the claimed VLT percentage. Only original equipment manufacturer (OEM) tinted glass complying with the 70%/50% rule is legally permissible.
+Rule 115: Emission Standards and Smoke Meter Norms
+Prescribes Bharat Stage (BS-VI) parameters for engine exhaust emissions.
+Mandates periodic testing and generation of electronic Pollution Under Control Certificates (e-PUCC) linked natively to the Vahan National Register.
+Rule 119: Speed Limiting Devices (Speed Governors)
+Requires transport vehicles (taxis, commercial buses, trucks) to be fitted with an electronic speed governor calibrated to limits determined by the State Transport Authority (typically 80 km/h for commercial vehicles, 40–50 km/h for specific Delhi transport buses).
+Rule 125N: Rear Underrun Protection Devices (RUPD) and Lateral Underrun Protection Devices (LUPD)
+Requires commercial goods carriages exceeding specified gross vehicle weights to carry functional, certified steel RUPD and LUPD barriers to prevent two-wheelers and LMVs from sliding beneath truck beds during collisions.
+Rule 138: Safety Equipment & Use of Safety Belts
+Every driver and person occupying the front seat or front-facing rear seats must wear a properly buckled three-point seat belt while the vehicle is in motion on a public road.
+SOURCE METADATA:
+Organization: Ministry of Road Transport and Highways (MoRTH), Government of India
+Legislation: Central Motor Vehicles Rules, 1989 (with subsequent amendments)
+Authority Level: Tier-1 Subordinate Legislation
+Last Verified: September 23, 2026
+
+PART 5 — DELHI MOTOR VEHICLES RULES (DMVR), 1993
+The Delhi Motor Vehicles Rules provide localized state-level operational parameters under powers conferred by Section 28, 38, 65, 95, 96, 107, 111, 138, and 213 of the Motor Vehicles Act, 1988.
+Key Operative Rules
+Rule 3 & 4 (Licensing Authority Jurisdiction): Establishes the designated Zonal Transport Offices (ZTOs/MLOs) across the revenue districts of Delhi (e.g., Mall Road, Janakpuri, Sheikh Sarai, Sarai Kale Khan, Vasant Vihar, Mayur Vihar, Rohini).
+Rule 7 (Conductor Licences): Mandates specific licensing, medical clearance, and educational qualifications for conductors operating on Stage Carriages (DTC and Cluster buses) within Delhi.
+Rule 11 (Badges and Uniforms):
+Drivers of public service vehicles (taxis, autorickshaws, stage carriages) must wear prescribed khaki or white uniforms as directed by the State Transport Authority (STA).
+Auto and Taxi drivers must prominently display their identity badge issued by the Transport Department on their left chest.
+Rule 50 & 51 (Inspection and Fitness of Transport Vehicles): Regulates vehicle testing operations at the centralized, automated testing facility at Burari and regional inspection bays.
+Rule 77–88 (Permit Conditions and Stage Carriage Operations): Enforces conditions on routes, adherence to bus stops, passenger capacity limits, fare collection mechanisms, and mandatory installation of GPS tracking devices and panic buttons mapped to the GNCTD Command and Control Centre.
+Rule 105 (Obstructive Parking and Traffic Flow Regulations): Empowers the Delhi Police and Transport Enforcement Wings to tow, lock, or impound vehicles abandoned or parked obstructively on Delhi roads.
+SOURCE METADATA:
+Organization: Transport Department, Government of National Capital Territory of Delhi
+Legislation: Delhi Motor Vehicles Rules, 1993
+Authority Level: Tier-1 State Subordinate Legislation
+Last Verified: September 23, 2026
+
+PART 6 — DRIVING LICENCE PROCEDURES (SARATHI / DELHI TRANSPORT)
+The GNCTD Transport Department delivers licensing services through the faceless, contactless architecture of the MoRTH Sarathi portal (sarathi.parivahan.gov.in).
+APPLICANT PATHWAY:
+[Aadhaar-authenticated online application] ──> [Online LL Test via remote proctoring]
+│
+▼
+[30-Day Mandatory Practice Window] ─────────────> [Issue Form 2 (Learner's Licence)]
+│
+▼
+[Slot Booking on Automated Track] ──────────────> [Physical Driving Skill Test]
+│
+▼
+[Form 7 Dispatch via Speed Post] ◄────────────── [Approval by Licensing Authority]
+
+6.1 Learner's Licence (LL)
+Eligibility:
+Minimum age 16 years: Motor Cycle without Gear (engine capacity $\le 50\text{cc}$ - Note: practically obsolete due to lack of compliant production vehicles; operational for non-geared electric two-wheelers with speeds $\le 25\text{km/h}$ not requiring a licence, otherwise rarely issued).
+Minimum age 18 years: Motor Cycle with Gear (MCWG) and Light Motor Vehicle (LMV - private cars).
+Minimum age 20 years: Transport Vehicle (Commercial goods/passenger carriage) + prerequisite of holding an LMV licence for at least 1 year.
+Statutory Forms:
+Form 1: Application-cum-declaration of physical fitness (self-declaration for non-transport under 40 years).
+Form 1A: Medical Certificate issued by a registered medical practitioner (mandatory for applicants $>40$ years old, or all transport vehicle categories).
+Form 2: Application for grant of Learner's Licence.
+Step-by-Step Faceless Workflow:
+Navigate to sarathi.parivahan.gov.in, select State: "NCT of Delhi".
+Select "Apply for Learner Licence" $\to$ authenticate via Aadhaar-linked OTP for contactless processing.
+Enter biographical details, educational qualification, address, and select licensing classes (e.g., MCWG, LMV).
+Upload self-declaration (Form 1) or signed Form 1A (if aged $>40$ years).
+Pay statutory fee online: ₹150 (Test Fee) + ₹150 per class of vehicle.
+Undergo the mandatory Road Safety Tutorial video on the Sarathi portal.
+Appear for the remote, online, proctored Learner Licence Test (Computer/Webcam-monitored):
+Test structure: 10 multiple-choice questions on road traffic signs, signals, and driving regulations.
+Passing threshold: Minimum 6 correct answers within 300 seconds.
+Upon passing, download digitally signed Form 2 (Learner's Licence).
+Legal Operational Restrictions:
+Validity: 6 months from the date of issue across the territory of India.
+Mandatory "L" Plate: Vehicle must display red "L" letters on a white background on both front and rear (dimensions: $10\text{cm}\times 10\text{cm}$).
+Accompaniment: The learner must be accompanied by a person holding an effective and valid permanent driving licence for that category of vehicle sitting in a position to control or stop the vehicle (except on a single-seat two-wheeler).
+6.2 Permanent Driving Licence (DL)
+Eligibility: Holder of an active Learner's Licence for a minimum period of 30 days and maximum 180 days from the LL issuance date.
+Step-by-Step Workflow:
+Access Sarathi portal $\to$ "Apply for Driving Licence".
+Enter Learner Licence number and Date of Birth.
+Select vehicle categories for which the test is sought.
+Pay statutory fees: ₹200 (Driving Test fee per category) + ₹200 (Form 7 Smart Card / PVC print and dispatch fee).
+Schedule appointment slot at an Automated Driving Test Track (ADTT) in Delhi (e.g., Shakurbasti, Mayur Vihar, Vishwas Nagar, Sarai Kale Khan, Rohini, Hari Nagar, Lado Sarai, Burari).
+Physical Test Appearance: Bring the vehicle of the specific category, along with valid RC, Insurance, and PUCC, and original LL.
+Clear the automated camera-based tracking course:
+Two-Wheeler: Serpent / Figure of 8 track without foot-touching.
+Four-Wheeler: Up-gradient stop-and-restart without rollback $>12$ inches; Parallel Parking within designated sensors; Forward-8; Reverse-S track within set time limits.
+Once cleared, the licensing authority endorses the approval electronically. Form 7 smart card DL is dispatched via registered Speed Post to the Aadhaar address.
+6.3 Driving Licence Renewal
+Statutory Timing: Application may be filed within 1 year before expiry or within 1 year after expiry without passing a driving re-test. If renewal is filed after 1 year of expiry, the applicant must appear for a fresh driving skill test under Section 15(4) of the Motor Vehicles Act.
+Workflow: Submit Form 2 online, upload Form 1/1A (mandatory if $>40$ years), pay ₹200 renewal fee (plus ₹300 per year late fee if applicable), and download or await speed-post delivery.
+6.4 Duplicate Driving Licence
+Prerequisites: Loss, destruction, mutilation, or theft of original DL.
+Workflow: File an online Delhi Police Lost Report (e-Loss Report), access Sarathi, select "Services on DL" $\to$ "Issue of Duplicate DL", provide FIR/Loss Report number, upload self-declaration, pay statutory fee of ₹200.
+6.5 International Driving Permit (IDP)
+Eligibility: Citizen holding a valid Indian permanent driving licence and a valid passport and foreign visa.
+Workflow: Form 4A submitted online via Sarathi $\to$ upload passport, visa, flight ticket, medical certificate Form 1A $\to$ pay fee of ₹1,000 $\to$ physical biometric verification at ZTO if required by recent security guidelines. Validity: 1 year or until the validity of the domestic DL, whichever is earlier.
+SOURCE METADATA:
+Organization: MoRTH / Transport Department, GNCTD
+Portal: Sarathi Parivahan (sarathi.parivahan.gov.in)
+Legislation: CMVR 1989 Rules 14–21; DMVR 1993
+Last Verified: September 23, 2026
+
+PART 7 — VEHICLE REGISTRATION & RC SERVICES (VAHAN)
+Registration protocols are processed through MoRTH’s Vahan engine integrated with the Delhi Transport Department's digital infrastructure.
+┌────────────────────────────────────────┐
+│ Dealer Sells Vehicle (API to VAHAN)    │
+└───────────────────┬────────────────────┘
+│
+▼
+┌────────────────────────────────────────┐
+│ Tax & HSRP Registration Paid Online    │
+└───────────────────┬────────────────────┘
+│
+▼
+┌────────────────────────────────────────┐
+│ Online Verification by Registering     │
+│ Authority (Self-Registration Dealer)   │
+└───────────────────┬────────────────────┘
+│
+▼
+┌────────────────────────────────────────┐
+│ HSRP Fitment at Dealer Premise         │
+└───────────────────┬────────────────────┘
+│
+▼
+┌────────────────────────────────────────┐
+│ Form 23 Smart Card RC Dispatched       │
+│ to Owner Address via Speed Post        │
+└────────────────────────────────────────┘
+
+7.1 New Vehicle Registration (Private Vehicles)
+Point of Origin: Delhi utilizes the "Dealer-Point Registration" system. Authorized automobile dealers complete physical vehicle verification, road tax calculations, and electronic application transmission.
+Mandatory Documents:
+Sale Certificate (Form 21) issued by the manufacturer/dealer.
+Roadworthiness Certificate (Form 22) issued by the manufacturer.
+Valid Motor Vehicle Insurance Certificate.
+Address Proof of Delhi NCT (Aadhaar, Voter ID, Passport, Utility Bill, Registered Rent Agreement).
+PAN Card or Form 60.
+Fee and Delhi Road Tax Matrix:
+Registration Fee: ₹600 (LMV/Cars), ₹300 (Two-Wheelers).
+Delhi Road Tax (One-Time for 15 Years):
+Petrol/CNG Private Cars ($<\text{₹}6\text{ lakh}$): 4% of vehicle cost.
+Petrol/CNG Private Cars ($\text{₹}6\text{ to }10\text{ lakh}$): 7% of vehicle cost.
+Petrol/CNG Private Cars ($>\text{₹}10\text{ lakh}$): 10% of vehicle cost.
+Diesel Private Cars: Corresponding petrol rate + 25% surcharge (subject to current Delhi scrappage/registration caps).
+Electric Vehicles (EVs): 100% road tax and registration fee waiver under the Delhi Electric Vehicle Policy.
+7.2 Transfer of Ownership (Sale/Purchase)
+Intra-Delhi Transfer (Seller and Buyer both within Delhi):
+Statutory Forms: Form 29 (Notice of Transfer) and Form 30 (Application for Transfer of Ownership).
+Process: Access vahan.parivahan.gov.in $\to$ enter RC number $\to$ Transfer of Ownership $\to$ upload Aadhaar of buyer/seller, signed Form 29 & 30, valid insurance, valid PUCC $\to$ pay fee (₹150 for two-wheeler, ₹300 for LMV).
+Statutory Window: 30 days from transaction date.
+Transfer on Death of Registered Owner:
+Application via Form 31 within 30 days to inform registering authority; within 3 months to complete transfer.
+Requires: Death Certificate, Legal Heir Certificate / Succession Certificate, valid Insurance, and PUCC.
+Transfer of Vehicle Purchased in Public Auction: Application via Form 32 within 30 days of taking possession.
+7.3 Duplicate Registration Certificate (RC)
+Application: Form 26 submitted online through Vahan.
+Prerequisites: Delhi Police online Missing/Lost Report, valid insurance, valid PUCC, chassis pencil print (if physically demanded during inspection audits). Fee: ₹150 (Two-Wheeler), ₹300 (LMV).
+7.4 Hypothecation Endorsement and Termination
+Endorsement (Loan Addition): Form 34 submitted jointly by owner and financier.
+Termination (Loan Clearance / Hypothecation Removal):
+Form 35 issued by the lending bank (NOC / Loan Closure Letter).
+Uploaded to Vahan $\to$ automated digital verification with connected bank APIs $\to$ removal of lien from national registry $\to$ issue of clean Form 23 RC. Fee: ₹100.
+SOURCE METADATA:
+Organization: Transport Department, GNCTD / MoRTH
+Portal: Vahan Citizen Services (vahan.parivahan.gov.in)
+Legislation: CMVR 1989 Rules 47–58; DMVR 1993
+Last Verified: September 23, 2026
+
+PART 8 — VEHICLE FITNESS CERTIFICATION
+8.1 Statutory Framework
+Under Section 56 of the Motor Vehicles Act, 1988, a transport (commercial) vehicle shall not be deemed to be validly registered unless it carries a valid Certificate of Fitness issued by the prescribed testing authority.
+8.2 Testing Cycles and Validity
+Private Vehicles (Non-Transport): The registration certificate issued under Rule 48 serves as initial fitness for 15 years. Renewal of registration after 15 years acts as fitness inspection renewal (valid for 5 years thereafter, subject to NGT/Delhi fuel-type caps).
+Transport Vehicles (Commercial/Goods/Buses/Taxis):
+New commercial vehicles: Fitness certificate valid for 2 years up to 8 years of vehicle age.
+Vehicles older than 8 years: Mandatory renewal every 1 year.
+Testing Facility: Automated Inspection and Certification Centre, Burari, Delhi.
+8.3 Burari Inspection Checklist
+During physical and automated inspection, the vehicle is evaluated against:
+Brake efficiency on automated roller brake testers.
+Steering gear play and alignment.
+Headlight alignment, beam intensity, and high-low focus.
+Exhaust gas emissions and smoke density analysis.
+Functional Speed Limiting Device (Speed Governor) calibration seal.
+Functional Vehicle Location Tracking Device (VLTD) and Emergency Alert Panic Buttons.
+Structural integrity of chassis, suspension, RUPD, and LUPD.
+Retransmission retro-reflective tapes (yellow on sides, red at rear, white at front).
+8.4 Statutory Fees and Penalties
+Fitness Testing Fee: ₹600 (LMV Transport), ₹1,000 (Medium/Heavy Commercial Vehicles).
+Certificate Grant Fee: ₹200.
+Late Fee: ₹50 for each day of delay after expiry of fitness certificate under CMVR Rule 81.
+Enforcement Penalty (Section 192 MVA): Plying without valid fitness is penalized as plying an unregistered vehicle: First offence ₹2,000–₹5,000; Subsequent offence ₹5,000–₹10,000, or imprisonment up to 1 year, or both.
+SOURCE METADATA:
+Organization: State Transport Authority (STA), Delhi / GNCTD
+Facility: Automated Inspection & Certification Centre, Burari
+Legislation: Motor Vehicles Act Sec 56; CMVR Rules 62–81
+Last Verified: September 23, 2026
+
+PART 9 — VEHICLE PERMITS & COMMERCIAL VEHICLE REGULATIONS
+9.1 Classification of Permits
+Goods Carriage Permit (Section 79 MVA): Authorizes the carriage of goods within the NCT of Delhi or specific routes.
+National Permit (Goods Carriage - Rule 86 CMVR): Enables operation throughout India (minimum 4 contiguous states including home state). Requires clean vehicle age, consolidated national authorization fee of ₹16,500/year, and designated body markings ("NATIONAL PERMIT").
+Contract Carriage Permit (Section 74 MVA): Applicable to auto-rickshaws, motor cabs (taxis), maxi-cabs, and tourist buses hired on a point-to-point basis.
+Stage Carriage Permit (Section 72 MVA): Issued for city public transit buses (DTC and DIMTS Cluster) plying along fixed routes with designated fare-collection stages.
+9.2 Mandatory In-Vehicle Mandates for Delhi Permits
+All commercial passenger vehicles licensed to operate in Delhi must maintain:
+Functioning AIS-140 compliant GPS/VLTD device transmitting telemetry to the Delhi Transport Department Command Center.
+Functioning emergency panic buttons visible and accessible to passengers.
+Valid fare meters (auto-rickshaws and non-app taxis) calibrated to current notified rates.
+Driver displaying valid PSV (Public Service Vehicle) Badge.
+9.3 Permit Violations and Penalties (Section 192A MVA)
+Offence: Operating a transport vehicle without a valid permit or in violation of any permit condition (e.g., carrying passengers on a goods vehicle, operating off-route, refusing fares).
+Penalty: Imprisonment up to 6 months, or fine up to ₹10,000 (minimum ₹10,000), or both. Court challan—cannot be settled on the spot.
+SOURCE METADATA:
+Organization: State Transport Authority, GNCTD
+Legislation: Motor Vehicles Act 1988, Chapter V (Sections 66–96); DMVR 1993
+Last Verified: September 23, 2026
+
+PART 10 — MOTOR VEHICLE INSURANCE & STATUTORY LIABILITIES
+10.1 Statutory Imperative (Section 146 MVA)
+Motor vehicle insurance coverage against third-party liability is mandatory for all vehicles operating in a public place. Third-party insurance covers death, bodily injury, or damage to property of third parties caused by or arising out of the use of the vehicle.
+10.2 Digital Validity & Verification
+Under MoRTH circulars and Insurance Regulatory and Development Authority of India (IRDAI) guidelines, digital insurance policies displayed via the mParivahan or DigiLocker application have parity with physical original certificates.
+Insurance policies are pushed electronically by insurers to the central IIB (Insurance Information Bureau) database, reflecting automatically in Vahan/e-Challan systems.
+10.3 Penalties for Operating Without Valid Insurance (Section 196 MVA)
+First Offence: Fine of ₹2,000, or imprisonment up to 3 months, or both.
+Second or Subsequent Offence: Fine of ₹4,000, or imprisonment up to 3 months, or both.
+Accident Implications: If an uninsured vehicle is involved in a fatal or grevious-injury accident, the Motor Accident Claims Tribunal (MACT) attaches the vehicle owner’s personal movable/immovable assets to pay statutory compensation awarded to victims under Section 166 of the MVA.
+SOURCE METADATA:
+Organization: IRDAI / Ministry of Road Transport and Highways
+Legislation: Motor Vehicles Act, 1988, Chapter XI (Insurance of Motor Vehicles)
+Last Verified: September 23, 2026
+
+PART 11 — POLLUTION CONTROL & PUCC PROTOCOLS
+11.1 PUC Certificate Architecture
+Testing is conducted at certified retail emission testing kiosks across Delhi fuel stations, uploading tailpipe emission readouts directly to vahan.parivahan.gov.in/puc via connected analyzers.
+PETROL / CNG VEHICLES:
+Idling test for Carbon Monoxide (CO) & Hydrocarbons (HC)
+│
+▼
+DIESEL VEHICLES:
+Free Acceleration Smoke Density Test (Light Absorption Coefficient 'k' or HSU)
+│
+▼
+Data & Live Photo Uploaded to VAHAN ──> e-PUCC Issued with QR Code
+
+11.2 Validity Period
+BS-IV / BS-VI Compliant Vehicles: 1 year from the date of issuance.
+Pre-BS-IV Vehicles: 3 months or 6 months depending on initial certification class.
+Brand New Motor Vehicles: Valid for 1 year from initial registration date (exempt from testing during Year 1).
+11.3 Statutory Penalties (Section 190(2) MVA)
+Penalty: Fine of ₹10,000, or imprisonment for a term up to 3 months, or both.
+Administrative Sanction: Disqualification of the driver's licence for a period of 3 months.
+Enforcement: Enforced through hand-held traffic devices and automated ANPR (Automatic Number Plate Recognition) cameras deployed across fuel retail stations in Delhi.
+SOURCE METADATA:
+Organization: Delhi Transport Department / Central Pollution Control Board (CPCB)
+Portal: Vahan PUC Portal (vahan.parivahan.gov.in/puc)
+Legislation: CMVR 1989 Rule 115; MVA Sec 190(2)
+Last Verified: September 23, 2026
+
+PART 12 — COMPLETE DELHI TRAFFIC POLICE VIOLATIONS & PENALTIES MASTER TABLE
+The following register details traffic violations and their statutory penalties as codified under the Motor Vehicles Act, 1988, Central Motor Vehicles Rules, 1989, and Delhi Motor Vehicles Rules, 1993, and enforced by the Delhi Traffic Police.
+SOURCE METADATA:
+Organization: Delhi Traffic Police
+Source Document: Official Violations & Penalties Schedule 2026
+URL: https://traffic.delhipolice.gov.in/en/traffic-violations-penalties
+Authority Level: Tier-1 Administrative Enforcement
+Last Verified: September 23, 2026
+
+PART 13 — TRAFFIC CHALLAN ADJUDICATION: COMPOUNDING, COURTS & DISPUTES
+13.1 Conceptual Division: Compoundable vs. Court Challans
+Compoundable Offences (Section 200 MVA): Infractions where the alleged offender may acknowledge guilt and settle the statutory liability administratively by paying a predetermined composition fee without judicial trial. Once paid, no criminal record attaches to the driver. Examples: helmet violations, seatbelt violations, over-speeding (LMV), red-light stop line encroachment.
+Non-Compoundable / Court Challans: Serious offences where the law mandates judicial scrutiny or where penalties involve mandatory licence suspension or imprisonment. These cannot be paid at roadside traffic posts or simple digital composition portals. Examples: drunken driving (Sec 185), juvenile driving (Sec 199A), permit cancellations (Sec 192A), driving without insurance (repeat offence), racing (Sec 189).
+13.2 Online Challan Verification and Settling
+Verification Portals:
+Delhi Traffic Police Portal: traffic.delhipolice.gov.in/notices
+MoRTH Central e-Challan System: echallan.parivahan.gov.in
+Workflow to Pay a Compoundable Challan:
+Access echallan.parivahan.gov.in $\to$ click "Check Challan Status".
+Input Challan Number, Vehicle Registration Number, or Driving Licence Number + Captcha.
+The list of active, pending notices appears.
+For compoundable notices: Click "Pay Now", select Payment Gateway (e-Payment via Debit Card, Net Banking, UPI), receive electronic transaction acknowledgment and discharge receipt (Form MVA-Compounding).
+13.3 Judicial Settlement: Virtual Courts & Physical Special Courts
+Delhi Virtual Court (vcourts.gov.in):
+Established under the aegis of the High Court of Delhi for summary disposal of camera-based traffic violations.
+Workflow: Cases sent to Virtual Court generate an SMS notice to the violator’s registered mobile. The violator visits vcourts.gov.in, searches by Mobile or CNR number, reviews photo evidence, and chooses:
+Pleads Guilty: The system calculates the summary judicial fine. User pays online; case closes.
+Contests / Pleads Not Guilty: Case is transferred electronically to the Regular Metropolitan Magistrate (Traffic) Court having territorial jurisdiction over that police circle.
+Special Evening Courts & Weekend Courts:
+Established across Delhi District Court complexes (Tis Hazari, Patiala House, Karkardooma, Rohini, Saket, Dwarka) to dispose of contested or non-compoundable traffic challans outside regular administrative hours.
+National Lok Adalats:
+Organized quarterly by the Delhi State Legal Services Authority (DSLSA).
+Citizens book digital appointment tokens via dslsa.org to appear before designated benches for waiver, reduction, or summary disposal of pending camera-based compoundable challans.
+13.4 Grievance Redressal and Disputed Notices
+Incorrect Vehicle Number / Fake Plate Notice:
+If a citizen receives an automated notice for a location where their vehicle was not present, submit a grievance with photo evidence of their vehicle (showing plate style) via the Delhi Traffic Police Grievance Portal or email info@delhitrafficpolice.nic.in.
+Traffic Police verify backend audit cameras; if a mismatched make/model or cloned number plate is identified, the notice is revoked.
+SOURCE METADATA:
+Organization: High Court of Delhi / Delhi Traffic Police / MoRTH
+Portals: e-Challan (echallan.parivahan.gov.in), Delhi Virtual Court (vcourts.gov.in)
+Legislation: Motor Vehicles Act 1988 Sec 200, 206, 208; Code of Criminal Procedure
+Last Verified: September 23, 2026
+
+PART 14 — VEHICLE TOWING, CUSTODY, IMPOUNDMENT & RELEASE
+14.1 Statutory Authority
+Vehicles parked in violation of signs, causing danger, obstruction, or abandoned on public carriageways are removed under Section 127 of the Motor Vehicles Act, 1988, read with Rule 105 of the Delhi Motor Vehicles Rules, 1993.
+14.2 Locating a Towed Vehicle
+Search System: Delhi Traffic Police Web Application (traffic.delhipolice.gov.in/towed-vehicles) or through the Traffic Helpline (1095 / 011-25844444).
+Information Required: Vehicle Registration Number.
+System Response: Designates the specific Traffic Circle, Name/Location of the Impound Yard / Pit, and the Circle Inspector contact number.
+14.3 Official Towing & Custody Fee Schedule
+Note: Storage fees begin accumulating if the vehicle is not claimed within 24 hours of arrival at the impound yard.
+14.4 Step-by-Step Release Workflow
+Visit the designated Traffic Police Pit / Impound Facility during operational hours.
+Produce original Driving Licence, valid RC, valid Insurance Certificate, and valid PUCC.
+Pay the compoundable violation penalty (e.g., Section 122/177 improper parking: ₹500) via hand-held POS machine.
+Pay the applicable Towing Charge and accumulated Custody Fees.
+Inspect the vehicle for physical integrity, sign the release register, and receive the official cash/electronic receipt.
+SOURCE METADATA:
+Organization: Delhi Traffic Police
+Enforcement Schedule: Vehicle Custody and Towing Regulation Orders
+Authority Level: Tier-2 Operational Rule
+Last Verified: September 23, 2026
+
+PART 15 — NO ENTRY RESTRICTIONS & REGULATORY PERMISSION FRAMEWORK
+To prevent severe traffic congestion and vehicular pollution, the Delhi Police Commissioner imposes regulatory restrictions on the entry and movement of medium and heavy goods vehicles under Section 115 of the MVA.
+15.1 General Peak-Hour No-Entry Timing Architecture
+Morning Peak Restriction: 07:00 AM to 11:00 AM (Movement of goods vehicles prohibited across key arterial roads).
+Evening Peak Restriction: 05:00 PM to 11:00 PM (Dense urban zones, commercial markets, and ring roads completely closed to heavy transport).
+Night Movement Window: 11:00 PM to 07:00 AM (Subject to environmental compliance—e.g., non-destined transit trucks routed away via Eastern/Western Peripheral Expressways).
+15.2 Long-Term and Short-Term No-Entry Permissions
+Authority: Joint Commissioner of Police (Traffic), Traffic Headquarters, Todapur, New Delhi.
+Eligible Vehicles: Essential service delivery (petroleum, water, milk, medical supplies, perishable food supplies, government infrastructure construction materials).
+Application System: Digital submission via Delhi Traffic Police Web Portal (traffic.delhipolice.gov.in/no-entry-permission).
+Required Documents:
+Valid RC, Fitness Certificate, National/State Permit.
+Valid Third-Party Insurance and valid PUCC.
+Justification letter from hiring agency/department certifying essential service character.
+Verified GPS tracking integration proof.
+Permit Categories:
+Short-Term: Valid from 24 hours up to 15 days for specific infrastructure work.
+Long-Term: Valid for 6 months or 1 year. Must carry QR-coded approval letter on the windshield.
+SOURCE METADATA:
+Organization: Office of the Commissioner of Police, Delhi
+Statutory Order: Annual No-Entry Notification under Sec 115 MVA
+Authority Level: Tier-2 Statutory Executive Order
+Last Verified: September 23, 2026
+
+PART 16 — NO OBJECTION CERTIFICATE (NOC) PROTOCOLS
+16.1 Vehicle Transfer NOC (Inter-State Transfer)
+Statutory Requirement: Under Section 48 of the MVA, when a vehicle registered in Delhi is sold or transferred to an address outside the NCT of Delhi, or when the owner relocates permanently, a No Objection Certificate (Form 28) must be obtained from the registering authority.
+Procedure:
+File online application for Form 28 on vahan.parivahan.gov.in.
+Automated validation ensures no pending unpaid traffic challans or untraced crime records exist against the vehicle.
+Upload pencil chassis imprint, RC copy, insurance, and PUCC.
+Pay statutory fee of ₹100.
+The system generates digitally signed Form 28 (triplicate copies) dispatched to the new registering authority.
+16.2 Delhi Police Traffic Clearance Certificate (No-Challan Certificate)
+Required by fleet operators, cab aggregators, or individuals before selling commercial transport assets.
+Generated automatically via traffic.delhipolice.gov.in confirming zero active pending enforcement notices or court warrants.
+SOURCE METADATA:
+Organization: MoRTH / Delhi Transport Department / Delhi Traffic Police
+Legislation: Motor Vehicles Act 1988 Sec 48; CMVR Rule 58
+Last Verified: September 23, 2026
+
+PART 17 — ROAD SAFETY REGULATIONS, LANE DISCIPLINE & HUMAN PROTOCOLS
+17.1 Lane Discipline & Mandatory Bus Corridor Rule
+Under special regulatory notifications endorsed by the Supreme Court and Delhi High Court, the extreme left lane of all multi-lane roads in Delhi is reserved exclusively for DTC buses, cluster buses, and heavy goods transport.
+Motor cars, two-wheelers, and auto-rickshaws are prohibited from encroaching into the dedicated bus lane during designated enforcement hours.
+Heavy buses encroaching into general traffic lanes or failing to pull flush against curbs at designated bus stops face immediate penalties of ₹10,000 under Section 194(1) MVA.
+17.2 Intersections and Right of Way
+Roundabouts: Vehicles already circulating within the roundabout carriage circle possess statutory right of way over vehicles approaching the entrance.
+Uncontrolled T-Intersections: Traffic traversing the terminating street must yield right of way to traffic circulating on the through arterial carriageway.
+Yellow Box Markings: Drivers must not enter a crosshatched yellow box junction unless their exit carriageway is clear, preventing intersection deadlocks.
+SOURCE METADATA:
+Organization: Delhi Traffic Police / MoRTH
+Rules: Motor Vehicles (Driving) Regulations, 2017
+Authority Level: Tier-1 Regulatory Codes
+Last Verified: September 23, 2026
+
+PART 18 — ROAD SIGNS CATALOGUE: MANDATORY, CAUTIONARY & INFORMATORY
+The design, shape, coloration, and operational meaning of road signs follow the Indian Roads Congress (IRC:67) standards and the First Schedule of the Motor Vehicles Act, 1988.
+18.1 Mandatory / Regulatory Signs (Circular Shapes - Red Borders)
+Disobeying a mandatory sign constitutes an offence under Section 119, penalized under Section 177 or 184.
+STOP (Octagonal Shape - Red with White Letters): Driver must bring the vehicle to a complete halt behind the stop line and proceed only when the intersection is completely clear.
+GIVE WAY (Inverted Equilateral Triangle - White with Red Border): Driver must yield right of way to vehicles on the main road, stopping if necessary.
+NO ENTRY (Red Circle with White Horizontal Bar): Strict prohibition on forward vehicular movement.
+ONE WAY (Circle with Opposing Arrows, One Crossed Out): Driving permitted only in the direction of the uncrossed arrow.
+VEHICLES PROHIBITED IN BOTH DIRECTIONS: Open circle with red boundary; no motor vehicles permitted.
+RIGHT TURN PROHIBITED / LEFT TURN PROHIBITED: Circular sign with arrow indicating turn overlaid with a diagonal red slash.
+U-TURN PROHIBITED: Circular sign with inverted U-arrow overlaid with a diagonal red slash.
+OVERTAKING PROHIBITED: Circular sign showing two adjacent vehicles with a red slash across the passing vehicle.
+HORN PROHIBITED (Silence Zone): Trumpet/horn profile with diagonal red slash; indicates proximity to schools, hospitals, or courts.
+SPEED LIMIT (Circle with Red Border and Black Numerals): Maximum speed allowed in kilometers per hour under dry conditions (e.g., "50").
+COMPULSORY TURN LEFT / RIGHT (Blue Circle with White Arrow): Directional mandate; must maneuver vehicle solely in the indicated direction.
+18.2 Cautionary / Warning Signs (Equilateral Triangles - Red Borders)
+Warns drivers of hazards ahead. Ignoring these signs may result in dangerous driving charges under Section 184 if an incident occurs.
+RIGHT / LEFT HAIRPIN BEND: Sharp turn exceeding 90 degrees ahead.
+RIGHT / LEFT REVERSE BEND: Zigzag double turn ahead.
+STEEP ASCENT / STEEP DESCENT: Approaching an incline/decline exceeding specified gradients.
+NARROW ROAD AHEAD / ROAD WIDENS AHEAD: Physical constriction or widening of carriageway.
+NARROW BRIDGE: Width of bridge structure is less than approaching roadway.
+PEDESTRIAN CROSSING (Triangle with Walking Person Silhouette): Driver must slow down and prepare to yield to pedestrians crossing.
+SCHOOL AHEAD: Silhouette of children with school bags; requires reduction of speed.
+SPEED BREAKER / ROUGH ROAD: Physical hump or carriageway depression ahead.
+GAP IN MEDIAN: Approaching an authorized turning median opening.
+18.3 Informatory Signs (Rectangular Shapes - Blue or Green Backgrounds)
+Provides directional, facility, and geographical guidance.
+DESTINATION & DISTANCE SIGNS: Green background on National/State Highways, Blue background inside urban Delhi roads.
+PARKING SIGNS: Blue square with white "P"; may incorporate vehicle-type pictograms (e.g., Car only, Scooter only).
+FIRST AID POST / HOSPITAL: White cross on green/blue background or bed silhouette.
+PETROL PUMP / PUBLIC REFRESHMENT: Fuel pump nozzle profile.
+SOURCE METADATA:
+Organization: Indian Roads Congress (IRC:67-2022) / Delhi Traffic Police
+Statutory Reference: First Schedule, Motor Vehicles Act, 1988
+Last Verified: September 23, 2026
+
+PART 19 — ROAD MARKINGS, CARRIAGEWAY GEOMETRY & SIGNALS
+Road markings in Delhi are installed under IRC:35 specifications.
+19.1 Longitudinal Markings
+Broken White Center Line: Separates opposing or adjacent lanes; lane changing and overtaking permitted with due caution.
+Continuous Solid White Line: Lane changing and overtaking prohibited; vehicles must maintain their lane.
+Continuous Solid Yellow Line: Strict prohibition on crossing or straddling; overtaking must not involve crossing this line.
+Double Solid Yellow Lines: Strict segregation; crossing for overtaking, turning, or reversing is strictly prohibited. Penalized under Section 184(e).
+19.2 Transverse Markings
+Stop Line: Continuous white line ($200\text{mm}$ to $300\text{mm}$ wide) across approach lanes at signalized intersections or stop signs. Vehicular front tires must not cross or overhang this line when the signal is red. Penalized under Section 119/177.
+Zebra Pedestrian Crossing: Alternating black and white longitudinal stripes across the carriageway. Pedestrians have absolute right of way once they step onto the crossing. Encroachment by vehicles while pedestrians cross is an offence.
+SOURCE METADATA:
+Organization: Indian Roads Congress (IRC:35-2015) / Delhi Traffic Police
+Authority Level: Tier-1 Standard
+Last Verified: September 23, 2026
+
+PART 20 — ROAD-WISE STATUTORY SPEED LIMITS IN NCT OF DELHI
+Under Executive Notifications issued by the Commissioner of Police, Delhi, under Section 112 of the Motor Vehicles Act, 1988.
+DELHI SPEED LIMIT TIERS
+┌─────────────────────────────────┬─────────────────────────────────┐
+│  LMV (Private Cars, Taxis, Cabs)│     Two-Wheelers (MCWG/Scooter) │
+│       50 - 70 km/h (By Road)    │         50 - 60 km/h (Capped)   │
+└─────────────────────────────────┴─────────────────────────────────┘
+┌─────────────────────────────────┬─────────────────────────────────┐
+│  Transport (Buses, Trucks, HMV) │     Commercial 3-Wheelers / IPT │
+│          40 - 50 km/h           │              40 km/h            │
+└─────────────────────────────────┴─────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────────┐
+│     Service Roads, Residential Sectors, Commercial Markets        │
+│                     30 km/h (Universal Cap)                       │
+└───────────────────────────────────────────────────────────────────┘
+
+20.1 Master Speed Limit Matrix by Road Stretch
+Legal Caveat: Speed violations in Delhi are monitored via radar-calibrated Over-Speed Violation Detection (OSVD) cameras. Speed exceeding limits by even 1 km/h triggers automated algorithmic challan issuance under Section 183.
+SOURCE METADATA:
+Organization: Delhi Traffic Police / Office of the Commissioner of Police
+Statutory Document: Notification No. 1324-1423/TE(I)/PHQ
+Authority Level: Tier-1 Operational Police Order
+Last Verified: September 23, 2026
+
+PART 21 — PARKING REGULATIONS, RESTRICTIONS & PENALTIES
+21.1 Prohibited Parking Locations
+Under Section 122 and 126 of the MVA, read with Delhi DMVR Rule 105, parking is strictly prohibited:
+On a pedestrian footpath, cycle track, or designated walkway.
+Parallel to another parked vehicle (double parking).
+Within 5 meters of a bus stop, pedestrian crossing, or intersection.
+On bridges, flyovers, tunnels, or underpasses.
+In front of operational driveways, emergency exits, hospital gates, or fire hydrants.
+In any demarcated "No Parking" zone or towing zone.
+21.2 Penalties and Towing Liability
+Violation fine: ₹500 (first offence), ₹1,500 (repeat offence) under Section 177.
+Mandatory crane and custody fees (ranging from ₹200 to ₹2,000 as detailed in Part 14).
+Vehicle wheel clamping: If a vehicle is clamped on-street by Delhi Traffic Police, attempting to force movement or breaking the clamp is an offence under Section 179 (disobeying police orders) and Section 427 of the Indian Penal Code / Bharatiya Nyaya Sanhita (mischief causing damage to public property).
+SOURCE METADATA:
+Organization: Delhi Traffic Police / Unified Traffic and Transportation Infrastructure (Planning & Engineering) Centre (UTTIPEC)
+Legislation: DMVR 1993 Rule 105; MVA Sec 122/177
+Last Verified: September 23, 2026
+
+PART 22 — PUBLIC SERVICE & COMMERCIAL TRANSPORT VEHICLES
+22.1 Driver Responsibilities
+Drivers of public service vehicles (auto-rickshaws, e-rickshaws, taxis, buses) must:
+Wear the prescribed uniform (khaki for TSR/bus drivers; white/blue for designated taxi fleets).
+Prominently display their Public Service Vehicle (PSV) Badge issued by the STA.
+Not refuse carriage to passengers based on destination during operational hours.
+Operate solely using certified digital fare meters or app-based algorithmic meters approved by the GNCTD Transport Department.
+Carry a functional dry chemical powder (DCP) Fire Extinguisher and a First Aid Kit.
+SOURCE METADATA:
+Organization: State Transport Authority, GNCTD
+Legislation: DMVR 1993 Rules 11, 23, 72; Conditions of Stage/Contract Carriage
+Last Verified: September 23, 2026
+
+PART 23 — GOODS CARRIAGES, LOADING DIMENSIONS & SAFETY FITTINGS
+23.1 Overloading Enforcement (Section 194(1) MVA)
+Penal Amount: Baseline fine of ₹20,000, plus an additional fine of ₹2,000 for each excess metric ton over the registered Gross Vehicle Weight (GVW).
+Offloading Mandate: The vehicle cannot proceed until the excess load is physically offloaded and safely stored at the operator’s own expense and risk.
+23.2 Hazardous Materials and Spill Prevention
+Vehicles carrying loose construction materials (sand, dust, gravel, cement, debris) within the NCT of Delhi must be completely sheeted and covered with tarpaulin.
+Spilling materials or leaving dust uncovered incurs a fine of ₹20,000 under environmental orders and Section 115/194(1) MVA.
+Protruding steel rods, pipes, or building structures extending beyond the physical rear/front bumpers of the goods bed are strictly prohibited. Penalty: ₹500–₹1,500 under Section 177, alongside dangerous driving charges under Section 184.
+SOURCE METADATA:
+Organization: MoRTH / Delhi Traffic Police / National Green Tribunal
+Legislation: CMVR 1989 Rules 114, 115, 125N; MVA Sec 113, 194(1)
+Last Verified: September 23, 2026
+
+PART 24 — EMERGENCY VEHICLE PROTOCOLS & RIGHT OF WAY
+24.1 Statutory Mandate (Section 194E MVA)
+Every driver of a motor vehicle shall, on the approach of a fire service vehicle, ambulance, or other emergency vehicle bearing active visual warning lights and sirens, immediately draw to the extreme left boundary of the carriageway, slow down, and halt to provide clear passage.
+24.2 Delhi Traffic Police Green Corridors
+The Delhi Traffic Police operates dynamic "Green Corridors" for organ transplantation transit and emergency cardiac transfers between major medical centres (e.g., AIIMS, Safdarjung, Max Saket, Apollo, IGI Airport).
+Dedicated control rooms manually override traffic signal phases to maintain green aspects along the route.
+Any private motorist tailgating an emergency convoy, cutting across a Green Corridor, or blocking an ambulance faces automatic camera-based fines of ₹10,000 and possible criminal prosecution under Section 184/194E.
+SOURCE METADATA:
+Organization: Delhi Traffic Police / MoRTH
+Legislation: Motor Vehicles Act, 1988, Section 194E
+Last Verified: September 23, 2026
+
+PART 25 — DRUNKEN DRIVING & DANGEROUS DRIVING ENFORCEMENT
+25.1 Legal Threshold and Testing Protocol (Section 185 MVA)
+Threshold: Presence of alcohol exceeding 30 milligrams per 100 milliliters of blood detected by a breath analyser breath test.
+Testing Protocol:
+Driver directed to pull over at an enforcement checkpoint.
+Police officer uses an electronic breath analyser with a disposable, sterile mouthpiece.
+The unit records BAC levels and prints an on-the-spot slip showing timestamp, officer ID, and measured alcohol content.
+If BAC $>30\text{mg}/100\text{ml}$, the driver is detained from operating the vehicle, and the vehicle may be seized under Section 207 if no sober licensed passenger is available to drive.
+The driver may be escorted to an authorized government hospital for clinical blood and urine testing to establish confirmatory evidence under Section 203/204 MVA.
+25.2 Adjudication Nature
+Drunken driving is strictly non-compoundable. Delhi Traffic Police personnel cannot collect a fine on the road.
+The challan is forwarded to the competent Metropolitan Magistrate Court.
+The court may sentence the offender to imprisonment up to 6 months and/or impose a fine up to ₹10,000 for a first offence, with mandatory driving licence suspension for at least 3 to 6 months.
+SOURCE METADATA:
+Organization: Delhi Traffic Police / Delhi Judicial Academy
+Statutory Reference: Motor Vehicles Act 1988 Sections 185, 203, 204, 207
+Last Verified: September 23, 2026
+
+PART 26 — ACCIDENT PROTOCOLS, CLAIMS & GOOD SAMARITAN PROTECTIONS
+26.1 Driver Duties Post-Accident (Section 134 MVA)
+When an accident occurs involving personal injury or vehicle damage:
+The driver must immediately stop the vehicle.
+Render medical assistance to injured persons and transport them to the nearest medical hospital unless prevented by mob violence.
+Report the circumstance to the nearest police station within 24 hours.
+Produce vehicle registration, driving licence, and insurance details to investigating officers upon demand.
+26.2 Statutory Protections for Good Samaritans (Section 134A MVA)
+Under Section 134A of the MVA and Central Government Guidelines:
+A Good Samaritan (bystander rescuing a road accident victim) cannot be subjected to civil or criminal liability for any injury or death resulting from assistance rendered.
+Police cannot compel a Good Samaritan to disclose their name, address, or identity.
+Hospitals cannot refuse treatment or demand advance payments from a bystander who brings an accident victim to an emergency ward.
+SOURCE METADATA:
+Organization: MoRTH / Supreme Court of India (*SaveLIFE Foundation v. Union of India*)
+Legislation: Motor Vehicles Act 1988 Sec 134, 134A; CMVR Rules 138–142
+Last Verified: September 23, 2026
+
+PART 27 — JUVENILE TRAFFIC OFFENCES & GUARDIAN LIABILITY
+27.1 Statutory Framework (Section 199A MVA)
+Where any motor vehicle offence is committed by a juvenile (individual below 18 years of age):
+Presumption of Guilt: The parent or legal guardian of the juvenile, or the registered owner of the motor vehicle, is legally deemed guilty of the contravention.
+Defenses: The guardian/owner must prove that the offence was committed without their knowledge, or that they exercised all due diligence to prevent it.
+Statutory Penalties for Guardian/Owner:
+Imprisonment for a term extending up to 3 years.
+Fine of ₹25,000.
+Consequences for Vehicle & Minor:
+The Registration Certificate (RC) of the vehicle is cancelled for 12 months.
+The juvenile is barred from obtaining a learner's or permanent driving licence until reaching 25 years of age.
+The juvenile faces summary trial under the Juvenile Justice (Care and Protection of Children) Act, 2015.
+SOURCE METADATA:
+Organization: Ministry of Road Transport and Highways / Delhi Police
+Legislation: Motor Vehicles (Amendment) Act 2019 Sec 199A; Juvenile Justice Act, 2015
+Last Verified: September 23, 2026
+
+PART 28 — END-OF-LIFE VEHICLES (ELV) & VEHICLE SCRAPPAGE POLICY
+28.1 Judicial and Environmental Mandates
+Under continuous orders of the National Green Tribunal (Vardhaman Kaushik v. Union of India) and the Supreme Court of India (M.C. Mehta air pollution petitions):
+Diesel Motor Vehicles: Prohibited from operating in the NCT of Delhi once they reach 10 years from the initial registration date.
+Petrol / CNG Motor Vehicles: Prohibited from operating in the NCT of Delhi once they reach 15 years from the initial registration date.
+28.2 Enforcement Actions
+Any vehicle exceeding these age caps found moving on a public road or parked on a public street in Delhi is immediately seized by the Transport Department Enforcement Wing or Delhi Traffic Police under Section 207 of the MVA.
+Impounded ELVs are transferred to Registered Vehicle Scrapping Facilities (RVSF) for dismantling and metal destruction.
+28.3 Transfer Out of Delhi (NOC Window)
+Owners of vehicles approaching the age limits may apply online via Vahan for a No Objection Certificate (NOC) to transfer and re-register the vehicle outside Delhi in non-restricted districts identified by the respective State Governments, provided the NOC is requested prior to vehicle age expiry.
+SOURCE METADATA:
+Organization: National Green Tribunal / Supreme Court / GNCTD Transport Department
+Policy: Registered Vehicle Scrapping Facility (RVSF) Rules, 2021; Delhi ELV Guidelines
+Last Verified: September 23, 2026
+
+PART 29 — TRAFFIC REGULATORY NOTIFICATIONS DIRECTORY
+This directory tracks active regulatory notices in the NCT of Delhi.
+29.1 Current Active Permanent/Semi-Permanent Notifications
+[NOTIFICATION 2021-SPEED-01]
+Authority: Office of the Commissioner of Police, Delhi
+Subject: Comprehensive Road-Wise Speed Limits for Motor Vehicles in NCT of Delhi
+Effective Date: June 11, 2021 (Continuous Validity)
+Classification: SEMI-STATIC REGULATORY ORDER
+
+[NOTIFICATION 2022-BUSLANE-04]
+Authority: GNCTD Transport Department / Enforcement Wing
+Subject: Mandatory Lane Discipline & Dedicated Right of Way for Stage Carriages on Identified Corridors
+Effective Date: April 1, 2022 (Continuous Validity)
+Classification: PERMANENT ENFORCEMENT ORDER
+
+[NOTIFICATION 2023-GRAP-CAQM]
+Authority: Commission for Air Quality Management (CAQM) in NCR and Adjoining Areas
+Subject: Graded Response Action Plan (GRAP) Institutional Trigger System (Stages I to IV)
+Effective Date: October 6, 2023 (Annual Winter Enforcement Profile)
+Classification: DYNAMIC RECURRENT STATUTORY ORDER
+
+PART 30 — TRAFFIC ADVISORIES & DIVERSIONS ARCHITECTURE
+CRITICAL SYSTEM NOTICE:
+All information under Part 30 is classified as HIGHLY DYNAMIC and TIME-SENSITIVE.
+Vector indexers should configure short TTL (Time-to-Live) or frequent refresh
+intervals for dynamic advisory nodes.
+
+30.1 Standard Operational Diversions Architecture
+Republic Day & Independence Day Ceremonies:
+Central Vista, Kartavya Path, India Gate C-Hexagon, and Red Fort environs closed to general vehicular traffic during rehearsals and ceremonial operations. Heavy commercial vehicles diverted to the Western and Eastern Peripheral Expressways.
+Major Religious Processions (e.g., Kanwar Yatra, Eid, Muharram):
+Dedicated lanes reserved for pilgrims along NH-44, GT Road, and Apsara Border; general traffic diverted along secondary rings.
+Emergency Weather Diversions:
+Waterlogging protocols: Low-lying underpasses (Minto Bridge, Pul Prahladpur, Zakhira, Azadpur) closed upon automated sensor water-level warnings; traffic diverted to surface carriageways.
+SOURCE METADATA:
+Organization: Delhi Traffic Police Operations Cell
+Communications: @DelhiTrafficPolice / traffic.delhipolice.gov.in
+Data Freshness: Dynamic / Real-Time
+Last Verified: September 23, 2026
+
+PART 31 — CITIZEN-CENTRIC SERVICES & DIGITAL GRIEVANCE REDRESSAL
+31.1 Delhi Traffic Police Online Citizen Services
+Pending Notice Verification: Allows citizens to check and settle automated camera notices using vehicle or licence numbers.
+Online Towed Vehicle Search: Real-time query engine mapping vehicle plates to impound lots.
+Prepaid Booth Management: Regulated auto/taxi prepaid operations at New Delhi Railway Station, Old Delhi Station, Hazrat Nizamuddin, Anand Vihar, and IGI Airport to prevent passenger exploitation.
+Ambulance Emergency Route Coordination: Emergency helpline (1095 / 112) facilitating corridor clearances for inter-hospital transit.
+31.2 Delhi Government "Faceless" Transport Architecture
+The GNCTD Transport Department delivers 40+ statutory services through remote online submission without requiring physical visits to Zonal Transport Offices.
+Aadhaar-based electronic Know Your Customer (e-KYC) acts as identity verification for DL renewal, duplicate RC, address change, and international driving permits.
+SOURCE METADATA:
+Organization: Delhi Traffic Police / GNCTD Transport Department
+Portal: transport.delhi.gov.in / traffic.delhipolice.gov.in
+Last Verified: September 23, 2026
+
+PART 32 — STATUTORY & ADMINISTRATIVE FORMS CATALOGUE
+The following statutory forms prescribed under the Central Motor Vehicles Rules, 1989, must be utilized for administrative interactions:
+Form 1: Physical Fitness Declaration (Self-declaration by applicant for non-transport licence under 40 years).
+Form 1A: Medical Certificate (Issued by registered medical practitioner; mandatory for transport licences and applicants $>40$ years).
+Form 2: Application for Grant or Renewal of Learner's Licence.
+Form 4: Application for Grant of Permanent Driving Licence.
+Form 4A: Application for International Driving Permit (IDP).
+Form 9: Application for Renewal of Permanent Driving Licence.
+Form 20: Application for Registration of a Motor Vehicle.
+Form 21: Sale Certificate (Issued by automobile retail dealer).
+Form 22: Initial Roadworthiness Certificate (Issued by vehicle manufacturer).
+Form 23: Certificate of Registration (Smart Card / Digital format).
+Form 26: Application for Issue of Duplicate Certificate of Registration.
+Form 28: Application for Grant of No Objection Certificate (NOC).
+Form 29: Notice of Transfer of Ownership of a Motor Vehicle.
+Form 30: Application for Transfer of Ownership (Joint application by buyer and seller).
+Form 34: Application for Making an Entry of an Agreement of Hire-Purchase/Lease/Hypothecation.
+Form 35: Notice of Termination of Agreement of Hire-Purchase/Lease/Hypothecation.
+Form 38: Certificate of Fitness (For transport vehicles).
+SOURCE METADATA:
+Organization: MoRTH
+Statutory Document: CMVR 1989 First Schedule
+Last Verified: September 23, 2026
+
+PART 33 — MASTER STATUTORY FEE REGISTER
+The following consolidated fees are established under Rule 81 of the Central Motor Vehicles Rules, 1989, and notifications issued by the GNCTD Transport Department.
+SOURCE METADATA:
+Organization: MoRTH / Delhi Transport Department
+Legislation: CMVR Rule 81; Delhi Gazette Notifications
+Last Verified: September 23, 2026
+
+PART 34 — VERIFIED OFFICIAL DIRECTORY & EMERGENCY CONTACTS
+Emergency Police Helpline: 112
+Delhi Traffic Police 24x7 Helpline: 1095 / 011-25844444
+Delhi Traffic Police WhatsApp Helpline: 8750871493
+Traffic Control Room Fax: 011-25845555
+Transport Department Citizen Helpdesk: 011-23958836
+Delhi Pollution Control Committee (DPCC) Helpline: 011-23860389
+Official Web Portals:
+Delhi Traffic Police: [https://traffic.delhipolice.gov.in/](https://traffic.delhipolice.gov.in/)
+Parivahan National Portal: [https://parivahan.gov.in/](https://parivahan.gov.in/)
+GNCTD Transport Department: [https://transport.delhi.gov.in/](https://transport.delhi.gov.in/)
+Delhi Virtual Courts: [https://vcourts.gov.in/](https://vcourts.gov.in/)
+SOURCE METADATA:
+Organization: Delhi Police / GNCTD
+Authority Level: Tier-1 Verified Administrative Contacts
+Last Verified: September 23, 2026
+
+PART 35 — MASTER RAG FAQ KNOWLEDGE BASE (200 VERIFIED PAIRS)
+INSTRUCTION TO VECTOR INGESTION ENGINE:
+The following 200 question-answer units are calibrated as independent retrieval
+targets. Every pair contains its own entity terms, procedural instructions,
+and statutory citations to ensure semantic retrieval fidelity.
+
+Sub-Module 35.1: Driving Licence Queries (Q001 – Q030)
+Q001: What is the minimum age to obtain a driving licence for a private car in Delhi?
+A: Under Section 4 of the Motor Vehicles Act, 1988, the minimum age to apply for a Learner’s Licence and subsequently a Permanent Driving Licence for a Light Motor Vehicle (LMV - private car) is 18 years.
+Source: Motor Vehicles Act, 1988, Section 4.
+Q002: Can a 16-year-old legally drive any vehicle in Delhi?
+A: Under Section 4(1) of the Motor Vehicles Act, a person aged 16 years may drive a motorcycle with engine capacity not exceeding 50cc in a public place, provided they obtain a Learner’s Licence with parental consent. However, because standard production 50cc internal combustion motorcycles are virtually non-existent in the market, this category is practically inactive for conventional two-wheelers. Low-speed electric two-wheelers (maximum speed $\le 25\text{ km/h}$, output $<250\text{W}$) do not require a licence.
+Source: Motor Vehicles Act, 1988, Section 4; MoRTH Regulatory Clarifications.
+Q003: What is the minimum holding period for a Learner's Licence before applying for a permanent DL in Delhi?
+A: Under Rule 15 of the Central Motor Vehicles Rules, 1989, an applicant must have held a valid Learner's Licence for a minimum period of 30 days before taking the permanent driving licence skill test. The permanent DL test must be taken before the Learner's Licence expires (within 180 days).
+Source: Central Motor Vehicles Rules, 1989, Rule 15.
+Q004: How long is a Learner's Licence valid in Delhi?
+A: A Learner's Licence issued under Form 2 is valid for 6 months (180 days) from the date of issue across India.
+Source: Motor Vehicles Act, 1988, Section 14.
+Q005: Do I need to visit an RTO in Delhi to take the Learner's Licence test?
+A: No. Under the GNCTD Transport Department's contactless, faceless services scheme, applicants using Aadhaar-based authentication can watch the mandatory road safety tutorial and take the proctored computerized Learner Licence Test online from home using a camera-enabled device.
+Source: GNCTD Transport Department Faceless Services Scheme; Sarathi Portal.
+Q006: What documents are required to apply for a Learner's Licence online in Delhi?
+A: Applicants with an Aadhaar card linked to their mobile number need only provide their Aadhaar details for e-KYC (which verifies identity, age, and address). If not using Aadhaar e-KYC, physical proof of age (birth certificate, 10th marksheet, passport), address proof of Delhi, self-declaration of medical fitness (Form 1) or Medical Certificate (Form 1A if $>40$ years), and a passport photograph must be uploaded.
+Source: Central Motor Vehicles Rules, 1989, Rule 14; Sarathi Portal.
+Q007: What is the passing score for the online Learner's Licence test in Delhi?
+A: The online test consists of 10 multiple-choice questions on road signs, traffic signals, and driving rules. The candidate must answer at least 6 questions correctly within 300 seconds to pass.
+Source: Delhi Transport Department Licensing Guidelines.
+Q008: What happens if I fail the online Learner's Licence test in Delhi?
+A: If an applicant fails, they can pay a re-test fee of ₹50 on the Sarathi portal and re-attempt the test after 24 hours.
+Source: MoRTH Sarathi Portal Guidelines.
+Q009: What visual marking is required on a vehicle driven by a Learner's Licence holder?
+A: Under Rule 3 of the Central Motor Vehicles Rules, 1989, the vehicle must display a square white plate or sticker with a red letter "L" on both front and rear. Dimensions must be at least $10\text{ cm}\times 10\text{ cm}$, with the letter "L" being $9\text{ cm}$ high and $1.5\text{ cm}$ wide.
+Source: Central Motor Vehicles Rules, 1989, Rule 3.
+Q010: Can a Learner's Licence holder drive alone in Delhi?
+A: No. Under Rule 3 of the CMVR, 1989, a learner must be accompanied by an instructor or person who holds an effective, valid permanent driving licence for that category of vehicle, seated where they can readily stop the vehicle (except on a single-seat two-wheeler). Driving alone on a Learner's Licence is treated as driving without a licence under Section 3/181 of the MVA (Fine: ₹5,000).
+Source: Central Motor Vehicles Rules, 1989, Rule 3; MVA Section 181.
+Q011: What is the total government fee for a private car (LMV) Driving Licence in Delhi?
+A: Total fees: Learner Licence application (₹150 test fee + ₹150 vehicle category fee = ₹300) + Permanent DL skill test fee (₹200) + Form 7 Smart Card/PVC card issue and dispatch fee (₹200). Total: ₹700.
+Source: Central Motor Vehicles Rules, 1989, Rule 81; GNCTD Transport Fee Matrix.
+Q012: What automated tests are conducted at Delhi Automated Driving Test Tracks (ADTT)?
+A: For four-wheelers: Up-gradient stop-and-restart (evaluating vehicle rollback within sensors), parallel parking within sensor bounds, forward figure-of-eight, and reverse-S curve maneuvering within fixed time windows without hitting sensor markers.
+Source: Delhi Transport Department ADTT Operating Guidelines.
+Q013: What is the validity of a permanent driving licence for a private vehicle in Delhi?
+A: Under Section 14 of the MVA, a private DL issued to a person under 30 years is valid until they turn 40; for persons between 30 and 50 years, it is valid for 10 years; for persons between 50 and 55 years, it is valid until age 60; above 55 years, it is valid for 5 years.
+Source: Motor Vehicles Act, 1988 (as amended in 2019), Section 14.
+Q014: How far in advance can I apply for Driving Licence renewal in Delhi?
+A: Under Section 15 of the MVA, an application for DL renewal can be submitted up to 1 year before the expiry date, or within 1 year after expiry without having to retake the driving test.
+Source: Motor Vehicles Act, 1988, Section 15.
+Q015: What happens if I renew my Driving Licence more than 1 year after it expires?
+A: Under Section 15(4) of the Motor Vehicles Act, if an application for DL renewal is made more than 1 year after the licence has expired, the applicant must retake and pass the practical driving test at an Automated Driving Test Track before the licence can be renewed.
+Source: Motor Vehicles Act, 1988, Section 15(4).
+Q016: Who must submit Form 1A (Medical Certificate) when renewing a driving licence?
+A: Any applicant holding or applying for a transport (commercial) vehicle licence, and any applicant over 40 years of age applying for the grant or renewal of a private licence, must upload Form 1A signed by a registered medical practitioner.
+Source: Central Motor Vehicles Rules, 1989, Rule 5; MVA Section 8.
+Q017: How can I change the residential address on my Delhi Driving Licence?
+A: Access the Sarathi portal (sarathi.parivahan.gov.in), choose "Apply for Change of Address in DL", complete Aadhaar e-KYC (the address updates automatically to the Aadhaar address), upload the existing DL, pay the ₹200 fee, and the updated licence card will be dispatched by post.
+Source: MoRTH Sarathi Guidelines; Delhi Transport Department.
+Q018: Can I correct my name on my Driving Licence online in Delhi?
+A: Yes. Select "Services on DL" $\to$ "Name Correction" on the Sarathi portal. Upload supporting documentation: Gazette Notification for formal name changes, or marriage certificate for post-marriage surname updates, along with updated Aadhaar, and pay the ₹200 fee.
+Source: MoRTH Sarathi Portal Service Menu.
+Q019: What is the procedure if I lose my Driving Licence in Delhi?
+A: File an online Lost Property Report on the Delhi Police portal (delhipolice.gov.in). Access the Sarathi portal, select "Apply for Duplicate DL", enter your DL number and date of birth, enter the Delhi Police e-Lost Report reference number, pay the ₹200 fee, and the duplicate DL will be issued.
+Source: Delhi Police Lost Report Portal; Sarathi Portal.
+Q020: What is the fee and validity of an International Driving Permit (IDP) issued in Delhi?
+A: The statutory fee is ₹1,000. Under Rule 14 of the CMVR, an IDP is valid for 1 year from the date of issue or until the expiry of the domestic driving licence, whichever is earlier.
+Source: Central Motor Vehicles Rules, 1989, Rule 14, 81.
+Q021: What documents are required for an International Driving Permit in Delhi?
+A: Valid Indian Driving Licence, valid Indian Passport, valid visa for the destination country, confirmed air tickets, Medical Certificate in Form 1A, and 3 passport-sized photographs.
+Source: Delhi Transport Department IDP Requirements.
+Q022: How do I add a motorcycle endorsement (MCWG) to an existing car (LMV) driving licence?
+A: Apply for a Learner's Licence on the Sarathi portal for the new category (MCWG) based on your existing DL. Hold the LL for at least 30 days, then book a two-wheeler slot at an automated test track. Pass the test and pay the ₹500 fee (addition of class) to receive an updated combined DL.
+Source: Central Motor Vehicles Rules, 1989, Rule 17.
+Q023: Can I carry my Driving Licence on DigiLocker instead of a physical card?
+A: Yes. Under Rule 139 of the Central Motor Vehicles Rules, 1989, and MoRTH notifications, driving licences and registration certificates saved in the DigiLocker or mParivahan mobile applications carry equal legal weight to original physical documents and must be accepted by enforcement personnel. Screenshots, printouts, or gallery photos are not legally valid.
+Source: Central Motor Vehicles Rules, 1989, Rule 139; MoRTH Notification No. RT-11036/64/2017-MVL.
+Q024: What is the penalty for driving with an expired Driving Licence in Delhi?
+A: Driving with an expired licence is treated as driving without an effective licence under Section 3 of the MVA, penalized under Section 181 with a fine of ₹5,000.
+Source: Motor Vehicles Act, 1988, Section 3, 181.
+Q025: What is the minimum experience required to apply for a commercial/transport driving licence?
+A: Under Section 7(1) of the Motor Vehicles Act, an applicant must have held a valid permanent Light Motor Vehicle (LMV) driving licence for at least 1 year before applying for a Learner’s Licence for a transport vehicle.
+Source: Motor Vehicles Act, 1988, Section 7(1).
+Q026: Do I need an educational qualification to obtain a transport driving licence?
+A: The Central Government amended Rule 8 of the Central Motor Vehicles Rules, 1989, removing the minimum 8th standard educational requirement for transport vehicle drivers, focusing instead on practical skill certification and training at recognized Driver Training Institutes.
+Source: MoRTH Notification S.O. 2119(E); CMVR Rule 8 Amendment.
+Q027: How can I verify the authenticity of a Delhi Driving Licence online?
+A: Go to parivahan.gov.in, navigate to "Informational Services" $\to$ "Know Your Licence Details", enter the DL Number and Date of Birth, and the system displays the driver's name, vehicle endorsements, validity dates, and issuing authority.
+Source: Parivahan Sewa Portal.
+Q028: Can I renew my Delhi Driving Licence if I am temporarily living in another state?
+A: Yes. Under the Sarathi national platform, you can apply for DL Renewal with a change of address in any state across India by paying the appropriate service fees and completing online e-KYC.
+Source: MoRTH Sarathi Platform Interstate Guidelines.
+Q029: What happens if I fail the automated permanent driving licence test in Delhi?
+A: If an applicant fails, they can book a new appointment slot on the Sarathi portal after a mandatory 7-day waiting period and pay the re-test fee of ₹200.
+Source: Delhi Transport Department Licensing Guidelines.
+Q030: What is a Public Service Vehicle (PSV) Badge, and who needs it in Delhi?
+A: A PSV Badge is an authorization issued by the Delhi Transport Department under the Delhi Motor Vehicles Rules, 1993, required for anyone driving public service vehicles (auto-rickshaws, taxis, buses). It requires police verification, completion of first aid training, and passenger etiquette instruction.
+Source: Delhi Motor Vehicles Rules, 1993, Rule 11.
+Sub-Module 35.2: Vehicle Registration & RC Queries (Q031 – Q060)
+Q031: Can I register a brand new private diesel car in Delhi?
+A: Yes, provided the car meets current Bharat Stage VI (BS-VI) emission norms. However, under ongoing Supreme Court and NGT orders, diesel vehicles are subject to a strict 10-year maximum operational lifespan in Delhi, after which the vehicle cannot be legally driven or kept on public streets.
+Source: Supreme Court / NGT ELV Directives; Delhi Transport Department.
+Q032: What is the validity period of a private vehicle Registration Certificate (RC) in Delhi?
+A: Under Section 41(7) of the Motor Vehicles Act, a registration certificate for a non-transport (private) vehicle is issued for 15 years from the initial registration date. In Delhi, petrol/CNG vehicles can apply to renew registration for 5-year periods up to applicable caps, while diesel vehicles are limited to 10 years maximum.
+Source: Motor Vehicles Act, 1988, Section 41(7); NGT Directives.
+Q033: What is the "Dealer-Point Registration" system in Delhi?
+A: In Delhi, authorized motor vehicle dealers register new, non-transport private vehicles directly. Dealers upload documents to the Vahan portal, process road taxes, print chassis imprints, and fit High Security Registration Plates (HSRP) at the showroom before delivering the vehicle. Buyers do not need to take the vehicle to an RTO.
+Source: Delhi Transport Department Dealer Point Registration Guidelines.
+Q034: What is the road tax rate for private cars in Delhi?
+A: One-time road tax for 15 years: Petrol/CNG cars up to ₹6 lakh: 4%; ₹6 lakh to ₹10 lakh: 7%; above ₹10 lakh: 10%. Diesel vehicles are subject to an additional 25% surcharge over the base rate. Battery Electric Vehicles (EVs) enjoy a 100% road tax waiver under the Delhi EV Policy.
+Source: Delhi Motor Vehicles Taxation Act; Delhi EV Policy.
+Q035: How do I transfer ownership of a vehicle within Delhi after selling it?
+A: Seller and buyer initiate the transfer online at vahan.parivahan.gov.in. Both authenticate via Aadhaar e-KYC, upload signed Form 29 and Form 30, valid insurance, valid PUCC, and pay the transfer fee (₹150 for two-wheelers, ₹300 for LMVs). The updated RC is then dispatched by post to the buyer's address.
+Source: Central Motor Vehicles Rules, 1989, Rules 55–57; Vahan Portal.
+Q036: What is the statutory time limit to report a vehicle transfer in Delhi?
+A: Under Section 50 of the MVA, an intra-state sale must be reported to the registering authority within 30 days of the transaction. If the vehicle is transferred outside the state/NCT, it must be reported within 45 days.
+Source: Motor Vehicles Act, 1988, Section 50.
+Q037: What is the penalty for failing to report a vehicle ownership transfer within the deadline?
+A: Under the amended CMVR Rule 81, a late fee of ₹100 per month of delay applies for two-wheelers and ₹300 per month of delay for light motor vehicles, alongside general penalties under Section 177 of the MVA.
+Source: Central Motor Vehicles Rules, 1989, Rule 81.
+Q038: How do I remove a loan (hypothecation) from my vehicle RC in Delhi?
+A: Obtain a loan closure letter and Form 35 from your lending bank. Go to vahan.parivahan.gov.in, select "Hypothecation Termination", enter vehicle details, upload Form 35 and NOC. The system verifies this electronically with the bank's API, updates the record, and issues an unencumbered RC for a ₹100 fee.
+Source: Vahan Citizen Services; CMVR Rule 61.
+Q039: What should I do if my Registration Certificate (RC) is lost or stolen in Delhi?
+A: File an online Lost Property Report on the Delhi Police portal. Access vahan.parivahan.gov.in, select "Apply for Duplicate RC", enter vehicle and loss report details, upload valid insurance and PUCC, and pay the fee (₹150 for two-wheelers, ₹300 for cars).
+Source: Central Motor Vehicles Rules, 1989, Rule 53; Delhi Police.
+Q040: What is a High Security Registration Plate (HSRP) and is it mandatory in Delhi?
+A: Under Rule 50 of the CMVR, HSRP is mandatory for all vehicles in Delhi. It features a hot-stamped chromium hologram, laser-etched 10-digit PIN, non-removable snap locks, and a color-coded fuel sticker for the windshield. Operating without an HSRP incurs a fine of ₹500 to ₹1,500 under Section 177.
+Source: CMVR 1989, Rule 50; Supreme Court Directives.
+Q041: Where can I order an HSRP and color-coded sticker for my Delhi-registered vehicle?
+A: Book online through the authorized state portal (bookmyhsrp.com). Select vehicle category, provide chassis and engine numbers, select fitment at home or at an authorized dealership, and pay the prescribed fee.
+Source: GNCTD Transport Department HSRP Fitment Portal.
+Q042: What do the different color-coded windshield fuel stickers mean in Delhi?
+A: Under MoRTH guidelines: Light Blue sticker = Petrol and CNG vehicles; Orange sticker = Diesel vehicles; Green sticker = Battery Electric Vehicles (EVs).
+Source: MoRTH Notification S.O. 4367(E); CMVR Rule 50.
+Q043: What is the penalty for using a fancy, decorative, or non-standard number plate in Delhi?
+A: Number plates must conform to standard sizes, fonts, and layouts under Rule 50 and 51 of the CMVR. Deviations (unauthorized scripts, symbols, small lettering) are penalized under Section 177 with a fine of ₹500 for a first offence and ₹1,500 for repeat offences, along with removal of the illegal plate.
+Source: Central Motor Vehicles Rules, 1989, Rules 50, 51; MVA Section 177.
+Q044: How can I obtain a No Objection Certificate (NOC) to move my Delhi vehicle to another state?
+A: Apply for Form 28 online at vahan.parivahan.gov.in. The system verifies there are no pending police cases or unpaid challans, accepts payment of the ₹100 fee, and issues three copies of Form 28 to present to the new registering authority.
+Source: Motor Vehicles Act, 1988, Section 48; CMVR Rule 58.
+Q045: How long is a vehicle NOC issued by Delhi Transport Department valid?
+A: While the MVA does not set a hard expiration date for Form 28, most destination state transport authorities require registration within 30 to 90 days of issuance. If unused, it must be surrendered to the issuing Delhi RTO with a "Non-Utilization Certificate" from the target state.
+Source: Delhi Transport Department Inter-State Transfer Guidelines.
+Q046: Can I drive a vehicle registered in another state in Delhi without re-registering it?
+A: Under Section 47 of the Motor Vehicles Act, a vehicle registered outside Delhi can be driven in Delhi for up to 12 months without changing its registration. Beyond 12 months, the owner must apply for a new registration mark in Delhi and pay local road taxes.
+Source: Motor Vehicles Act, 1988, Section 47.
+Q047: Can an out-of-state diesel vehicle older than 10 years enter Delhi?
+A: No. Supreme Court, NGT, and CAQM orders ban all diesel vehicles older than 10 years and petrol vehicles older than 15 years from plying in Delhi, regardless of where they are registered. Such vehicles are subject to immediate seizure and impoundment.
+Source: National Green Tribunal Orders (O.A. No. 21/2014).
+Q048: How do I change the address on my vehicle Registration Certificate in Delhi?
+A: Apply for "Change of Address in RC" on vahan.parivahan.gov.in. With Aadhaar e-KYC, the address updates automatically. Upload the current RC, insurance, and PUCC, and pay the fee (₹150 for two-wheelers, ₹300 for cars).
+Source: Central Motor Vehicles Rules, 1989, Rule 59; Vahan Portal.
+Q049: What is the process for transferring vehicle ownership after the death of the registered owner?
+A: Under Rule 56 of the CMVR, the legal heir must inform the registering authority within 30 days of the owner's death and submit Form 31 within 3 months, accompanied by the death certificate, legal heir certificate, relationship proof, original RC, insurance, and PUCC.
+Source: Central Motor Vehicles Rules, 1989, Rule 56.
+Q050: How do I check if my vehicle has any active hypothecation (loan lien) recorded?
+A: Check vehicle details on parivahan.gov.in under "Know Your Vehicle Details" or the mParivahan app. The hypothecation status will show "Financed" along with the bank's name if a lien is active.
+Source: Parivahan Vahan Dashboard.
+Q051: Can I choose a customized or VIP registration number for my vehicle in Delhi?
+A: Yes. The Delhi Transport Department auctions fancy and customized registration marks through the online portal fancy.parivahan.gov.in. Numbers are split into categories (e.g., 0001, single-digit numbers, repetitive digits) with varying base reserve prices sold to the highest bidder.
+Source: Delhi Motor Vehicles (Allotment of Registration Marks) Rules.
+Q052: What is the base price for bidding on the registration number "0001" in Delhi?
+A: The base minimum reserve bidding price for the super-premium number "0001" is ₹5,000,000 (₹5 lakh) in the Delhi Transport Department e-auction system.
+Source: Delhi Transport Department E-Auction Schedule.
+Q053: Can I get an RC updated if I convert my petrol vehicle to CNG in Delhi?
+A: Yes, provided the retrofit is performed by a government-approved CNG kit retrofitter using an approved kit. Take the vehicle to the designated RTO along with the retrofitter invoice, kit approval certificate, and Form 22A. Once inspected, the RC is endorsed for "Petrol/CNG" fuel.
+Source: CMVR 1989, Rule 115B; Delhi Transport Retrofit Directives.
+Q054: What is the penalty for driving an unregistered vehicle in Delhi?
+A: Under Section 192(1) of the MVA, driving an unregistered vehicle carries a fine of ₹2,000 to ₹5,000 for a first offence. Repeat offences carry a fine of ₹5,000 to ₹10,000, or imprisonment up to 1 year, or both.
+Source: Motor Vehicles Act, 1988, Section 192(1).
+Q055: Is a temporary registration issued by an out-of-state dealer valid in Delhi?
+A: Under Section 43 of the MVA, a temporary registration is valid for a maximum of 1 month and cannot be renewed except under specific statutory conditions. Driving with an expired temporary registration is penalized as driving an unregistered vehicle under Section 192.
+Source: Motor Vehicles Act, 1988, Section 43, 192.
+Q056: How can I surrender a Delhi vehicle RC if the car is scrapped?
+A: Under Section 55 of the MVA, take the vehicle to a Registered Vehicle Scrapping Facility (RVSF). The RVSF issues a Certificate of Destruction. Submit this certificate on the Vahan portal to cancel the registration record.
+Source: Motor Vehicles Act, 1988, Section 55; MoRTH RVSF Guidelines.
+Q057: What happens to a vehicle RC when it reaches 15 years for a petrol car in Delhi?
+A: Its registration record is marked expired on the central Vahan database. The owner must scrap the vehicle at an RVSF or obtain an NOC before the 15-year mark to move the vehicle outside Delhi. It cannot legally be driven or parked on public roads.
+Source: Supreme Court / NGT Directives; GNCTD Transport Department.
+Q058: Can I legally modify my car's body structure or exhaust in Delhi?
+A: Under Section 52 of the MVA and the Supreme Court ruling in Regional Transport Officer, Athani v. K. Balachandran, structural modifications altering the manufacturer's original specifications (e.g., chassis modifications, wide body kits, loud aftermarket exhausts) are illegal. Violations carry a fine of ₹5,000 per modification under Section 182A(4) or vehicle impoundment.
+Source: Motor Vehicles Act, 1988, Section 52, 182A(4); Supreme Court of India.
+Q059: Are bull bars or crash guards allowed on passenger cars in Delhi?
+A: No. Under Section 52 of the MVA and MoRTH directives, aftermarket crash guards and bull bars are illegal because they compromise pedestrian safety and interfere with front airbag sensor deployment. Fines of ₹500 to ₹1,500 apply under Section 177.
+Source: MoRTH Circular No. RT-11021/44/2017-MVL.
+Q060: What should I do if my vehicle registration details contain typographical errors?
+A: File an application for "Correction in Registration Certificate" on vahan.parivahan.gov.in. Upload the initial sale certificate (Form 21) or manufacturing certificate (Form 22) showing the correct parameters to reconcile and update the digital record.
+Source: Vahan Administrative Corrections Procedure.
+Sub-Module 35.3: Traffic Challans & Enforcement (Q061 – Q095)
+Q061: How do I check if my vehicle has pending traffic challans in Delhi?
+A: Visit echallan.parivahan.gov.in or the Delhi Traffic Police portal (traffic.delhipolice.gov.in/notices). Enter your Vehicle Registration Number, Chassis Number, or Driving Licence Number to view all pending notices with violation photos, timestamps, and locations.
+Source: Delhi Traffic Police; MoRTH eChallan.
+Q062: What is the deadline to pay a compoundable traffic challan in Delhi?
+A: Under standard administrative practice, an e-challan should be paid within 60 days of issuance. If left unpaid, the system automatically forwards the challan to the Delhi Virtual Courts or the jurisdictional Metropolitan Magistrate, who may issue a judicial summons.
+Source: Delhi Traffic Police Adjudication Manual; eChallan Operating Protocol.
+Q063: What is the fine for jumping a red traffic light in Delhi?
+A: Under Section 184(a) of the Motor Vehicles Act, jumping a red light is classified as dangerous driving. The statutory penalty is a fine between ₹1,000 and ₹5,000, or imprisonment up to 1 year for a first offence, and up to ₹10,000 for a repeat offence.
+Source: Motor Vehicles Act, 1988, Section 184(a).
+Q064: What is the fine for driving without a seat belt in Delhi?
+A: Under Section 194B(1) of the MVA, operating a motor vehicle without wearing a safety belt carries a fine of ₹1,000.
+Source: Motor Vehicles Act, 1988, Section 194B(1).
+Q065: Is a rear-seat passenger required to wear a seat belt in Delhi?
+A: Yes. Under Rule 138(3) of the Central Motor Vehicles Rules, 1989, and Section 194B(1) of the MVA, every person seated in a forward-facing rear seat must wear a safety belt. Failure to do so carries a fine of ₹1,000.
+Source: CMVR Rule 138(3); MVA Section 194B(1).
+Q066: What is the fine for riding a motorcycle without a helmet in Delhi?
+A: Under Section 194D of the MVA, driving or riding pillion on a two-wheeler without an approved safety helmet carries a fine of ₹1,000, along with a mandatory 3-month disqualification of the driver’s licence.
+Source: Motor Vehicles Act, 1988, Section 129, 194D.
+Q067: Are Sikh riders exempt from wearing a helmet in Delhi?
+A: Under the second proviso to Section 129 of the Motor Vehicles Act, 1988, and Delhi Motor Vehicles Rules, any person who is a Sikh wearing a turban while driving or riding a motorcycle is exempt from the requirement to wear protective headgear.
+Source: Motor Vehicles Act, 1988, Section 129; DMVR 1993.
+Q068: What is the fine for carrying more than one pillion rider on a two-wheeler in Delhi?
+A: Under Section 194C of the MVA, triple riding on a two-wheeler carries a fine of ₹1,000, along with a 3-month disqualification of the driver’s licence.
+Source: Motor Vehicles Act, 1988, Section 128, 194C.
+Q069: What is the fine for using a mobile phone while driving in Delhi?
+A: Under Section 184(c) of the MVA, using a handheld communication device while driving carries a fine of ₹1,000 to ₹5,000 for a first offence, and up to ₹10,000 for a subsequent offence within 3 years.
+Source: Motor Vehicles Act, 1988, Section 184(c).
+Q070: Can I use a mobile phone for navigation while driving in Delhi?
+A: Under MoRTH notifications amending the Motor Vehicles (Driving) Regulations, handheld use of a phone is prohibited. A phone may be used for navigation only if secured in a dedicated dashboard/windshield mount and configured before driving, without requiring manual handling while in motion.
+Source: Motor Vehicles (Driving) Regulations, 2017; MoRTH Notification G.S.R. 584(E).
+Q071: What is the penalty for driving without valid third-party insurance in Delhi?
+A: Under Section 196 of the MVA, driving without insurance carries a fine of ₹2,000, or imprisonment up to 3 months, or both for a first offence. Repeat offences carry a fine of ₹4,000, or imprisonment up to 3 months, or both.
+Source: Motor Vehicles Act, 1988, Section 196.
+Q072: What is the penalty for driving without a valid PUCC in Delhi?
+A: Under Section 190(2) of the MVA, driving without a valid Pollution Under Control Certificate carries a fine of ₹10,000, or imprisonment up to 3 months, or both, plus a mandatory 3-month disqualification of the driving licence.
+Source: Motor Vehicles Act, 1988, Section 190(2).
+Q073: What is the penalty for failing to yield to an ambulance or fire engine in Delhi?
+A: Under Section 194E of the MVA, failing to pull to the side and provide clear passage to an emergency vehicle carries a fine of ₹10,000, or imprisonment up to 6 months, or both.
+Source: Motor Vehicles Act, 1988, Section 194E.
+Q074: What is the penalty for over-speeding in a private car (LMV) in Delhi?
+A: Under Section 183(1) of the MVA, exceeding the posted speed limit in a Light Motor Vehicle carries a fine of ₹1,000 to ₹2,000.
+Source: Motor Vehicles Act, 1988, Section 183(1).
+Q075: What is the penalty for over-speeding in a commercial bus or truck in Delhi?
+A: Under Section 183(2) of the MVA, exceeding the speed limit in a medium or heavy goods/passenger vehicle carries a fine of ₹2,000 to ₹4,000 for a first offence. Repeat offences can result in seizure of the driving licence under Section 206(4).
+Source: Motor Vehicles Act, 1988, Section 183(2), 206(4).
+Q076: What is the legal alcohol limit for drivers in Delhi?
+A: Under Section 185 of the MVA, the maximum allowable blood alcohol concentration is 30 milligrams of alcohol per 100 milliliters of blood. Any higher concentration detected by a breath analyser constitutes drunken driving.
+Source: Motor Vehicles Act, 1988, Section 185.
+Q077: What are the penalties for drunken driving in Delhi?
+A: Under Section 185 of the MVA, drunken driving is a non-compoundable court offence. First offence: Fine up to ₹10,000, or imprisonment up to 6 months, or both. Second or subsequent offence within 3 years: Fine up to ₹15,000, or imprisonment up to 2 years, or both. The court usually suspends the offender's licence for at least 6 months.
+Source: Motor Vehicles Act, 1988, Section 185.
+Q078: Can a traffic police officer collect cash for a drunken driving challan on the spot?
+A: No. Drunken driving (Section 185) is non-compoundable by law. The officer must seize the driving licence and issue a court citation. The fine or sentence can only be imposed by a Metropolitan Magistrate.
+Source: Motor Vehicles Act, 1988, Section 185, 200; Delhi Traffic Police Operating Procedures.
+Q079: What is the penalty for driving on the wrong side of the road in Delhi?
+A: Driving against the authorized flow of traffic is prosecuted as dangerous driving under Section 184(e) of the MVA. Penalty: Fine of ₹1,000 to ₹5,000 for a first offence, and up to ₹10,000 for repeat offences.
+Source: Motor Vehicles Act, 1988, Section 184(e).
+Q080: What is the penalty for stopping on or crossing the stop line at an intersection?
+A: Encroaching on or overrunning the stop line during a red signal phase is penalized under Section 119/177 of the MVA with a fine of ₹500 for a first offence and ₹1,500 for repeat offences.
+Source: Motor Vehicles Act, 1988, Section 119, 177.
+Q081: What is the fine for installing an aftermarket pressure horn or multi-tone horn?
+A: Under Rule 119 of the CMVR, read with Section 190(2) of the MVA, using a prohibited horn carries a fine of ₹10,000, along with seizure and removal of the device.
+Source: Central Motor Vehicles Rules, 1989, Rule 119; MVA Section 190(2).
+Q082: What is the fine for honking in a Silence Zone in Delhi?
+A: Under Section 194F of the MVA, honking in designated Silence Zones (within 100 meters of hospitals, schools, or courts) carries a fine of ₹1,000 for a first offence and ₹2,000 for subsequent offences.
+Source: Motor Vehicles Act, 1988, Section 194F.
+Q083: What is the penalty for applying dark sun films or tint films to car windows in Delhi?
+A: Under the Supreme Court ruling in Avishek Goenka v. Union of India, any aftermarket sun film applied to safety glass is prohibited regardless of claimed transparency. Penalized under Rule 100 CMVR / Section 177 MVA with a fine of ₹500 (plus on-the-spot film removal) for a first offence and ₹1,500 for repeat offences.
+Source: Supreme Court of India (WP (C) No. 265 of 2011); CMVR Rule 100.
+Q084: How does the Delhi Virtual Court handle camera-based traffic challans?
+A: Camera-captured violations (red light, over-speeding) are sent electronically to the Delhi Virtual Court (vcourts.gov.in). The registered owner receives an SMS notice. They can visit the site, enter the details, plead guilty and pay the summary judicial fine online, or plead not guilty to have the case transferred to a regular court.
+Source: High Court of Delhi Virtual Court Project; vcourts.gov.in.
+Q085: What happens if I ignore a summons from the Delhi Virtual Court?
+A: If you neither pay the fine nor contest the notice on vcourts.gov.in, the Virtual Court magistrate refers the case to the jurisdictional regular Metropolitan Magistrate Court, which can issue physical bailable or non-bailable warrants, and the vehicle may be blacklisted on Vahan.
+Source: Delhi Virtual Courts Adjudication SOP.
+Q086: What does it mean if a vehicle is "blacklisted" on the Vahan portal?
+A: If a vehicle is blacklisted due to long-unpaid challans, untraced crime status, or court orders, all administrative transactions (RC renewal, ownership transfer, hypothecation termination, permit/fitness issuance) are automatically blocked on Vahan until the underlying issue is resolved.
+Source: MoRTH Vahan Portal Technical Architecture.
+Q087: Can I contest a wrong traffic challan issued due to an incorrect camera reading in Delhi?
+A: Yes. If the plate in the camera violation photograph does not match your vehicle (or if your plate was cloned), submit a grievance through the Delhi Traffic Police Grievance Portal or email info@delhitrafficpolice.nic.in with proof (photos of your vehicle and RC). Once verified, the notice is dismissed.
+Source: Delhi Traffic Police Grievance Redressal Cell.
+Q088: Can an assistant sub-inspector (ASI) seize my driving licence on the spot?
+A: Under Section 206(4) of the MVA, an authorized police officer can seize a driving licence on the spot for specific serious offences: drunken driving, driving under the influence of drugs, dangerous driving, jumping red lights, over-speeding, or using a handheld mobile phone while driving, forwarding it to the RTO for disqualification.
+Source: Motor Vehicles Act, 1988, Section 206(4).
+Q089: What document should the police provide if they seize my physical Driving Licence?
+A: Under Section 206(2) of the MVA, the officer seizing the licence must issue an official temporary acknowledgement receipt (Form L.Temp or challan copy), which acts as a temporary permit to drive until the specified appearance date.
+Source: Motor Vehicles Act, 1988, Section 206(2).
+Q090: Can Delhi Police tow my vehicle if someone is sitting inside it?
+A: Under standard operating guidelines issued to Delhi Traffic Police crane operators, a vehicle cannot be hoisted or towed while any person is seated inside. Officers must instruct occupants to exit before towing, or issue a physical on-the-spot citation instead.
+Source: Delhi Traffic Police Crane Operation Standing Orders.
+Q091: What is the fine for driving without functional headlights or taillights at night in Delhi?
+A: Operating a vehicle without proper functional lights during darkness violates Rule 105 of the CMVR, carrying a fine of ₹500 for a first offence and ₹1,500 for repeat offences under Section 177.
+Source: Central Motor Vehicles Rules, 1989, Rule 105; MVA Section 177.
+Q092: What is the penalty for using high-beam headlights within urban city limits in Delhi?
+A: Under Rule 106 of the CMVR, headlights must be dipped to low beam when driving on illuminated urban roads or when approaching oncoming traffic. Unnecessary high-beam driving carries a fine of ₹500 under Section 177.
+Source: Central Motor Vehicles Rules, 1989, Rule 106; MVA Section 177.
+Q093: What is the fine for unauthorized use of a red, blue, or amber beacon light?
+A: Under Rule 108 of the CMVR, only authorized emergency and operational vehicles may use beacon lights. Unauthorized use carries a fine of ₹500 under Section 177, alongside immediate seizure and confiscation of the light assembly.
+Source: Central Motor Vehicles Rules, 1989, Rule 108; Supreme Court Directives.
+Q094: What is the penalty for racing or speed trials on public roads in Delhi?
+A: Under Section 189 of the MVA, engaging in speed racing or trials on public roads without written government permission carries a fine of ₹5,000, or imprisonment up to 3 months, or both for a first offence. Repeat offences carry a fine of ₹10,000, or imprisonment up to 1 year, or both.
+Source: Motor Vehicles Act, 1988, Section 189.
+Q095: What is the penalty for driving when mentally or physically unfit?
+A: Under Section 186 of the MVA, driving while suffering from any disease or physical disability that makes driving a source of danger to the public carries a fine of up to ₹1,000 for a first offence and up to ₹2,000 for subsequent offences.
+Source: Motor Vehicles Act, 1988, Section 186.
+Sub-Module 35.4: Commercial Vehicles, Goods Carriages, Taxis & Permits (Q096 – Q125)
+Q096: What is the penalty for operating a commercial transport vehicle without a permit in Delhi?
+A: Under Section 192A of the MVA, driving or using a transport vehicle without a valid permit carries a fine of ₹10,000, or imprisonment up to 6 months, or both. This is a non-compoundable court offence.
+Source: Motor Vehicles Act, 1988, Section 192A.
+Q097: What is the penalty for a commercial taxi or auto-rickshaw refusing to carry a passenger in Delhi?
+A: Under Rule 11 of the Delhi Motor Vehicles Rules, 1993, and Section 177 of the MVA, refusal by an auto-rickshaw or taxi driver to carry a passenger without valid cause carries a fine of ₹500 for a first offence and ₹1,500 for subsequent offences.
+Source: Delhi Motor Vehicles Rules, 1993, Rule 11; MVA Section 177.
+Q098: What is the fine for auto-rickshaws or taxis overcharging or not using the meter in Delhi?
+A: Demanding fares above notified rates or refusing to operate the calibrated digital fare meter carries a fine of ₹500 under DMVR Rule 11 / Section 177 for a first offence, and may lead to permit suspension proceedings by the State Transport Authority.
+Source: DMVR 1993, Rule 11; STA Delhi Directives.
+Q099: Are commercial passenger vehicles in Delhi required to install panic buttons and GPS?
+A: Yes. Under Rule 125H of the CMVR and Delhi permit conditions, all public service transport vehicles (buses, app cabs, commercial taxis) must be fitted with an AIS-140 compliant GPS/VLTD device and functional passenger panic buttons linked to the Delhi Transport Command and Control Centre.
+Source: Central Motor Vehicles Rules, 1989, Rule 125H; GNCTD Transport Department.
+Q100: What is the fine for carrying passengers on a goods vehicle in Delhi?
+A: Under Section 194(2) of the MVA, carrying passengers on a goods carriage carries a fine of ₹200 for each unauthorized passenger, and the vehicle may be prevented from proceeding until the passengers disembark.
+Source: Motor Vehicles Act, 1988, Section 194(2).
+Q101: What is the fine for an overloaded passenger bus in Delhi?
+A: Under Section 194A of the MVA, carrying passengers in excess of the vehicle's licensed passenger capacity carries a fine of ₹200 for each excess passenger, and the vehicle can be detained until alternative transport is arranged.
+Source: Motor Vehicles Act, 1988, Section 194A.
+Q102: What is the penalty for an overloaded goods truck in Delhi?
+A: Under Section 194(1) of the MVA, overloading carries a minimum baseline fine of ₹20,000, plus an additional fine of ₹2,000 for each excess metric ton over the licensed Gross Vehicle Weight (GVW).
+Source: Motor Vehicles Act, 1988, Section 194(1).
+Q103: Does an overloaded truck have to offload excess weight before being released?
+A: Yes. Under Section 194(1) of the MVA, an overloaded vehicle will not be permitted to proceed until the excess load is offloaded and safely stored at the owner's risk and expense.
+Source: Motor Vehicles Act, 1988, Section 194(1).
+Q104: What is the fine for carrying uncovered construction materials or sand in Delhi?
+A: Under National Green Tribunal directives and Section 115/194(1) of the MVA, transporting uncovered sand, dust, fly ash, or construction debris without a sealed tarpaulin covering carries a fine of ₹20,000 for environmental endangerment and unsafe carriage.
+Source: National Green Tribunal Environmental Directives; MVA Section 194(1).
+Q105: What is the penalty for driving a commercial goods truck in a "No Entry" zone in Delhi?
+A: Under Section 115 read with Section 194(1) of the MVA, entering a restricted road or plying during prohibited peak hours without a valid electronic No-Entry permit carries a fine of ₹20,000.
+Source: Delhi Police Section 115 Notifications; MVA Section 194(1).
+Q106: Where can a transport operator apply for an electronic No Entry Permit in Delhi?
+A: Online through the Delhi Traffic Police portal (traffic.delhipolice.gov.in/no-entry-permission). Operators submit vehicle details, route requirements, and justifications for essential commodity transport.
+Source: Delhi Traffic Police No Entry Permission System.
+Q107: What is the maximum speed limit for an auto-rickshaw (TSR) across Delhi?
+A: Under Delhi Traffic Police speed notifications, the maximum speed limit for three-wheeled passenger vehicles (auto-rickshaws) and Gramin Sewa vehicles is universally capped at 40 km/h on all roads where they are permitted to ply.
+Source: Delhi Traffic Police Comprehensive Speed Limit Notification.
+Q108: What are the speed limit rules for commercial transport buses in Delhi?
+A: Commercial and public buses are capped at 50 km/h or 60 km/h on major divided arterial roads and expressways, and 40 km/h on secondary and urban roads. Most city buses are fitted with speed governors calibrated to 40 km/h.
+Source: Delhi Traffic Police Speed Limit Schedule; CMVR Rule 119.
+Q109: What is the penalty for driving a commercial vehicle without an operational speed governor?
+A: Under Rule 119 of the CMVR, transport vehicles required to have speed limiters that operate with a tampered, unsealed, or disconnected device fail fitness requirements, penalized under Section 192 with a fine of ₹2,000 to ₹5,000.
+Source: Central Motor Vehicles Rules, 1989, Rule 119; MVA Section 192.
+Q110: What is a Rear Underrun Protection Device (RUPD) and is it mandatory for commercial trucks in Delhi?
+A: Under Rule 125N of the CMVR, an RUPD is a structural steel barrier fitted to the rear undercarriage of goods vehicles to prevent smaller vehicles from sliding beneath the chassis in a rear-end collision. Vehicles lacking an approved RUPD/LUPD will be denied a certificate of fitness.
+Source: Central Motor Vehicles Rules, 1989, Rule 125N.
+Q111: What is the mandatory uniform for auto-rickshaw and taxi drivers in Delhi?
+A: Under Rule 11 of the Delhi Motor Vehicles Rules, 1993, auto-rickshaw drivers must wear a khaki shirt and trousers, while designated commercial taxi drivers must wear white or grey uniforms. Failure to wear the prescribed uniform carries a fine of ₹500 under Section 177.
+Source: Delhi Motor Vehicles Rules, 1993, Rule 11; MVA Section 177.
+Q112: What is the penalty for an auto or bus driver smoking while on duty?
+A: Under Rule 11 of the DMVR, 1993, smoking in a public service vehicle is prohibited, carrying a fine of ₹500 under Section 177.
+Source: Delhi Motor Vehicles Rules, 1993, Rule 11; MVA Section 177.
+Q113: Can commercial auto-rickshaws or cycle-rickshaws ply on Delhi flyovers?
+A: Under Delhi Traffic Police regulatory notifications, non-motorized vehicles (cycle-rickshaws, handcarts) and slow-moving three-wheelers are prohibited from ascending specific elevated flyovers and expressways (e.g., Barapullah Flyway) where minimum traffic speeds present safety hazards.
+Source: Delhi Traffic Police Section 115 Regulatory Notifications.
+Q114: What is the dedicated Bus Lane enforcement rule in Delhi?
+A: Under transport regulations, the extreme left lane of designated multi-lane arterial corridors is reserved exclusively for DTC buses, cluster buses, and heavy goods vehicles. Other vehicles encroaching on the bus lane, or buses leaving their lane, face fines of ₹10,000 under Section 194(1).
+Source: Delhi Transport Department Bus Lane Directives; MVA Section 194(1).
+Q115: What documents must a commercial truck driver carry while operating in Delhi?
+A: Physical or digital Driving Licence with transport endorsement, physical or digital Registration Certificate, valid Certificate of Fitness (Form 38), valid Goods Carriage Permit, valid Third-Party Insurance, valid PUCC, Tax Clearance receipt, and National Permit authorization (if plying on an all-India permit).
+Source: Central Motor Vehicles Rules, 1989, Rule 139; Delhi Transport Regulations.
+Q116: How often must a commercial vehicle renew its Certificate of Fitness in Delhi?
+A: Under Section 56 of the MVA and Rule 62 of the CMVR, new commercial transport vehicles renew fitness every 2 years up to 8 years of age. Vehicles older than 8 years must renew their Certificate of Fitness annually.
+Source: Central Motor Vehicles Rules, 1989, Rule 62.
+Q117: What is the late fee for an expired commercial vehicle fitness certificate?
+A: Under Rule 81 of the CMVR, a late fee of ₹50 per day accumulates automatically on the Vahan portal for each day of operation after a fitness certificate expires.
+Source: Central Motor Vehicles Rules, 1989, Rule 81.
+Q118: What is a National Permit (NP) for goods vehicles and how is it obtained?
+A: A National Permit issued under Rule 86 of the CMVR authorizes a goods carriage to operate across all Indian states and Union Territories. Operators pay an annual consolidated central composite fee of ₹16,500 via the Vahan portal, and the vehicle must bear the words "NATIONAL PERMIT" across the front and rear.
+Source: Central Motor Vehicles Rules, 1989, Rules 86–88.
+Q119: What is the maximum age limit for a truck operating under a National Permit?
+A: Under Rule 88 of the CMVR, a goods carriage cannot operate under a National Permit if it is older than 15 years (or 12 years for multi-axle tankers carrying dangerous or hazardous goods). Note that inside Delhi, diesel trucks remain strictly barred after 10 years regardless of permit status.
+Source: Central Motor Vehicles Rules, 1989, Rule 88; NGT Directives.
+Q120: What are the requirements for vehicles carrying hazardous or dangerous chemicals in Delhi?
+A: Under Rules 129–137 of the CMVR, the vehicle must have an emergency information panel (EIP) displaying UN numbers, class labels, and hazchem codes; carry an approved fire extinguisher; have an engine exhaust spark arrestor; and the driver must hold a specialized dangerous goods transport licensing endorsement.
+Source: Central Motor Vehicles Rules, 1989, Rules 129–137.
+Q121: What is the penalty for driving a commercial vehicle without a valid fitness certificate in Delhi?
+A: Operating without fitness is penalized as operating an unregistered vehicle under Section 192 of the MVA: Fine of ₹2,000 to ₹5,000 for a first offence, and ₹5,000 to ₹10,000 or imprisonment up to 1 year for repeat offences.
+Source: Motor Vehicles Act, 1988, Section 56, 192.
+Q122: Can passenger cabs (app-based aggregators) operate diesel cars in Delhi?
+A: Under Supreme Court environmental orders, city taxis, intermediate public transport, and app-based aggregators operating point-to-point intra-Delhi services must run on clean fuels (CNG, Petrol, or Electric). Inter-state commercial tourist cabs entering from other states can use diesel provided they comply with emission and age limits.
+Source: Supreme Court Directives (M.C. Mehta v. Union of India).
+Q123: What is the fine for an unauthorized third-party passenger tout ("dalal") at bus terminals?
+A: Under Section 193 of the MVA, soliciting passengers without an authorized agent/canvasser licence carries a fine of ₹2,000 to ₹5,000 for a first offence, and up to ₹5,000 or imprisonment up to 1 year for subsequent offences.
+Source: Motor Vehicles Act, 1988, Section 93, 193.
+Q124: What is the penalty for commercial transport vehicles carrying goods that protrude dangerously?
+A: Under Rule 29 of the DMVR and Rule 107 of the CMVR, loads must not extend beyond the vehicle body. Dangerous protrusions carry a fine of ₹500 to ₹1,500 under Section 177, alongside dangerous driving charges under Section 184.
+Source: DMVR 1993, Rule 29; MVA Section 184.
+Q125: What is the legal capacity limit for an e-rickshaw operating in Delhi?
+A: Under special permit conditions issued by the Delhi Transport Department, an e-rickshaw is licensed to carry a maximum of 4 passengers plus the driver, with no more than 40 kg of passenger luggage. Overloading carries a fine under Section 194A of ₹200 per excess passenger.
+Source: Delhi Transport Special E-Rickshaw Regulations; MVA Section 194A.
+Sub-Module 35.5: Road Safety, Towing, Accidents & Environmental Norms (Q126 – Q160)
+Q126: Where can I check if my vehicle was towed by the Delhi Traffic Police?
+A: Visit the Delhi Traffic Police website (traffic.delhipolice.gov.in/towed-vehicles) or call the Traffic Control Room Helpline (1095 / 011-25844444). Enter your vehicle registration number to see the impound pit location and the circle officer's contact number.
+Source: Delhi Traffic Police Towed Vehicle Portal.
+Q127: What is the towing charge for a two-wheeler in Delhi?
+A: The standard towing charge for a two-wheeler (motorcycle/scooter) is ₹200, plus a ₹100 custody fee for each 24 hours of storage after the first 24 hours, in addition to the improper parking fine (₹500).
+Source: Delhi Traffic Police Towing Fee Schedule.
+Q128: What is the towing charge for a private car (LMV) in Delhi?
+A: The standard towing charge for a private car is ₹500, plus a ₹200 custody fee per 24-hour period after the first 24 hours, in addition to the improper parking fine (₹500).
+Source: Delhi Traffic Police Towing Fee Schedule.
+Q129: What documents are required to release a towed vehicle from a Delhi Traffic Police pit?
+A: Original Driving Licence, original or verified digital Registration Certificate (RC), valid Insurance Certificate, and valid PUCC. The claimant must pay the parking violation fine and towing charges to receive a formal release order.
+Source: Delhi Traffic Police Impound Pit Operating Guidelines.
+Q130: What is the penalty for parking a vehicle on a footpath in Delhi?
+A: Parking on a pedestrian footpath or designated cycle track violates Rule 15 of the DMVR and Section 122 of the MVA, carrying a fine of ₹500 for a first offence and ₹1,500 for subsequent offences, along with applicable towing fees.
+Source: DMVR 1993, Rule 15; MVA Section 177.
+Q131: What is the penalty for parking within a Yellow Box junction in Delhi?
+A: Stopping or parking within a yellow criss-cross box junction violates Section 119/177 of the MVA, carrying a fine of ₹500 for a first offence and ₹1,500 for subsequent offences.
+Source: Motor Vehicles Act, 1988, Section 119, 177.
+Q132: What should I do immediately if involved in a motor vehicle accident in Delhi?
+A: Under Section 134 of the MVA: Stop the vehicle immediately, render medical assistance to injured persons (including arranging transport to the nearest hospital), report the incident to the police via 112 within 24 hours, and provide your insurance and vehicle details to the responding police officers.
+Source: Motor Vehicles Act, 1988, Section 134.
+Q133: Can a bystander who helps an accident victim in Delhi be questioned or harassed by the police?
+A: No. Under Section 134A of the MVA (Good Samaritan protections), bystanders who help or transport road accident victims to a hospital cannot be subjected to civil or criminal liability, cannot be forced to disclose their name or identity, and cannot be detained at police stations or hospitals.
+Source: Motor Vehicles Act, 1988, Section 134A; Supreme Court of India.
+Q134: What is the compensation for victims of hit-and-run motor accidents in India?
+A: Under Section 161 of the MVA (as amended), the statutory compensation payable from the Motor Vehicles Accident Fund is ₹200,000 (₹2 lakh) in case of death, and ₹50,000 in case of grievous hurt.
+Source: Motor Vehicles Act, 1988, Section 161; MoRTH Scheme for Compensation at Hit and Run.
+Q135: What happens if a minor is caught driving a motor vehicle in Delhi?
+A: Under Section 199A of the MVA, the juvenile's parent or legal guardian, or the vehicle owner, is deemed guilty of an offence carrying a fine of ₹25,000 and imprisonment up to 3 years. The vehicle's registration is cancelled for 1 year, and the minor cannot obtain a driving licence until turning 25 years old.
+Source: Motor Vehicles Act, 1988, Section 199A.
+Q136: Can an End-of-Life Vehicle (10-year diesel, 15-year petrol) be parked on a public road in Delhi?
+A: No. Under Delhi Transport Department and High Court directives, parking an ELV on a public road or municipal street is prohibited. Delhi Traffic Police and municipal enforcement wings will tow and impound the vehicle directly for transfer to an authorized scrapping yard.
+Source: Delhi Transport Department ELV Guidelines; Delhi High Court Orders.
+Q137: Where are seized End-of-Life Vehicles sent in Delhi?
+A: Seized ELVs are transferred to licensed Registered Vehicle Scrapping Facilities (RVSFs) operating in the NCR under the MoRTH Vehicle Scrappage Policy for dismantling and recycling.
+Source: MoRTH Motor Vehicles (Registration and Functions of Vehicle Scrapping Facility) Rules.
+Q138: What is a Certificate of Deposit issued by a vehicle scrapper?
+A: When an owner surrenders an end-of-life vehicle to an RVSF, the scrapper issues a digital "Certificate of Deposit". This certificate can be used to claim road tax concessions and registration fee waivers when purchasing a new replacement motor vehicle.
+Source: MoRTH National Automobile Scrappage Policy Guidelines.
+Q139: Can an owner get an NOC to sell an ELV outside Delhi?
+A: Yes, provided the application is submitted on the Vahan portal before the vehicle crosses its strict age limit (10 years for diesel, 15 years for petrol). NOCs are granted only for non-restricted districts identified by receiving states outside the NCR.
+Source: GNCTD Transport Policy Circulars on ELV NOCs.
+Q140: What happens if an ELV owner fails to take action before the 10/15-year expiry date?
+A: Once the 10-year (diesel) or 15-year (petrol) mark is reached, the Vahan system automatically invalidates the registration. The vehicle cannot receive an NOC and can only be sold to an authorized RVSF for scrapping.
+Source: Delhi Transport Department Administrative Rules on ELVs.
+Q141: What is the Graded Response Action Plan (GRAP) and how does it affect Delhi traffic?
+A: GRAP is an emergency air pollution containment framework enforced by the Commission for Air Quality Management (CAQM). Under Stage III and Stage IV, older BS-III petrol and BS-IV diesel private cars, as well as non-essential medium and heavy diesel trucks, can be barred from entering or driving in Delhi, with non-compliance penalized at ₹20,000 under Section 194(1).
+Source: Commission for Air Quality Management in NCR; GRAP Notification.
+Q142: How much is the fine for violating GRAP vehicle restrictions in Delhi?
+A: Driving a vehicle barred under temporary GRAP orders (e.g., BS-III petrol or BS-IV diesel cars during active Stage III/IV orders) carries a fine of ₹20,000 under Section 115 read with Section 194(1) of the MVA.
+Source: Delhi Traffic Police Enforcement Directives; MVA Section 194(1).
+Q143: Are electric vehicles exempt from GRAP Stage III and IV traffic bans in Delhi?
+A: Yes. Pure Battery Electric Vehicles (EVs) and zero-emission vehicles are exempt from winter GRAP restrictions and can operate freely during emergency pollution alerts.
+Source: CAQM GRAP Statutory Directives.
+Q144: What is the fine for driving a vehicle emitting excessive visible smoke in Delhi?
+A: Even with a valid PUCC, operating a vehicle producing dense black or white exhaust smoke violates Section 190(2) of the MVA, carrying a fine of ₹10,000, and the vehicle can be directed for an immediate re-test.
+Source: Motor Vehicles Act, 1988, Section 190(2); CMVR Rule 115.
+Q145: How long does a new car have before it must undergo its first PUCC test?
+A: Under Rule 115(7) of the CMVR, a brand new motor vehicle is deemed compliant with emission standards for 1 year from the date of its initial registration. The owner must obtain its first PUCC upon reaching the 1-year mark.
+Source: Central Motor Vehicles Rules, 1989, Rule 115(7).
+Q146: What is the fine for modifying an exhaust pipe to make a motorcycle louder in Delhi?
+A: Installing aftermarket hollow or altered exhaust pipes (such as on Royal Enfield motorcycles) violates noise limits under CMVR Rule 120 and Section 190(2) of the MVA, carrying a fine of ₹10,000, alongside an additional ₹5,000 fine for unauthorized vehicle alteration under Section 182A(4).
+Source: Motor Vehicles Act, 1988, Section 182A(4), 190(2); CMVR Rule 120.
+Q147: What is the general speed limit on service roads in Delhi?
+A: The speed limit on all secondary service roads running parallel to highways and major arterial corridors in Delhi is strictly capped at 30 km/h for all vehicle classes.
+Source: Delhi Traffic Police Comprehensive Speed Limit Notification.
+Q148: What is the speed limit in residential colonies and market areas in Delhi?
+A: The statutory speed limit on internal roads within residential colonies, institutional campuses, and commercial markets in Delhi is capped at 30 km/h for all vehicle categories.
+Source: Delhi Traffic Police Comprehensive Speed Limit Notification.
+Q149: What is the maximum speed limit for two-wheelers on the Delhi-Meerut Expressway?
+A: Two-wheelers and three-wheelers are prohibited from plying on the main access-controlled carriageway of the Delhi-Meerut Expressway. Where permitted on adjacent non-access stretches, the speed limit is 60 km/h.
+Source: NHAI Expressways Operational Directives; Delhi Traffic Police.
+Q150: What is the speed limit on the DND Flyway (Noida Toll Bridge)?
+A: For private cars (LMV): 70 km/h; for two-wheelers: 60 km/h; for transport/heavy vehicles: 50 km/h.
+Source: Delhi Traffic Police Speed Limit Schedule.
+Q151: What does a flashing red traffic light mean in Delhi?
+A: Under Regulation 13 of the Motor Vehicles (Driving) Regulations, 2017, a flashing red signal requires drivers to come to a complete stop before the stop line, yield right of way to any pedestrians or cross-traffic, and proceed only when clear.
+Source: Motor Vehicles (Driving) Regulations, 2017, Regulation 13.
+Q152: What does a flashing amber (yellow) traffic light mean in Delhi?
+A: A flashing amber signal requires drivers to slow down and proceed through the intersection with caution, yielding to pedestrians and vehicles already in the intersection.
+Source: Motor Vehicles (Driving) Regulations, 2017, Regulation 13.
+Q153: What does a continuous single solid yellow line down the center of a road mean?
+A: A solid yellow line indicates that overtaking or crossing the line into the opposing lane is strictly prohibited. Drivers must stay on their side of the yellow line.
+Source: Indian Roads Congress (IRC:35); Motor Vehicles (Driving) Regulations, 2017.
+Q154: What does a broken white line down the center of a road indicate?
+A: A broken white line indicates that lane changes and overtaking are permitted when traffic conditions allow and it is safe to do so.
+Source: Indian Roads Congress (IRC:35); Motor Vehicles (Driving) Regulations, 2017.
+Q155: Can I overtake a vehicle from the left side on a Delhi road?
+A: Under Regulation 17 of the Motor Vehicles (Driving) Regulations, 2017, drivers must generally overtake from the right. Overtaking on the left is permitted only when the driver ahead has signaled an intention to turn right and moved toward the center of the road, or on multi-lane one-way roads when safe. Overtaking on the left in other circumstances carries a fine under Section 177.
+Source: Motor Vehicles (Driving) Regulations, 2017, Regulation 17.
+Q156: What is the mandatory safe following distance between vehicles in Delhi?
+A: Under Regulation 23 of the Motor Vehicles (Driving) Regulations, 2017, drivers must maintain a sufficient distance from the vehicle ahead to stop safely if the lead vehicle slows or brakes suddenly (the "three-second rule" under dry conditions).
+Source: Motor Vehicles (Driving) Regulations, 2017, Regulation 23.
+Q157: What is the penalty for using a handheld wireless communication device while riding a two-wheeler?
+A: Holding a mobile phone or wearing a phone inside a helmet while riding a two-wheeler violates Section 184(c) of the MVA, carrying a fine of ₹1,000 to ₹5,000 for a first offence and ₹10,000 for repeat offences.
+Source: Motor Vehicles Act, 1988, Section 184(c).
+Q158: What is the rule for pedestrian crossings (zebra crossings) in Delhi?
+A: Drivers must slow down when approaching a pedestrian crossing and come to a complete stop if pedestrians have stepped onto or are waiting to cross. Encroaching on the crossing while pedestrians are present carries a fine under Section 119/177 of ₹500.
+Source: Motor Vehicles (Driving) Regulations, 2017, Regulation 11.
+Q159: What is the rule for giving way at traffic roundabouts in Delhi?
+A: Drivers approaching a roundabout must yield right of way to vehicles already circulating within the roundabout carriage circle, unless directed otherwise by a police officer or signal.
+Source: Motor Vehicles (Driving) Regulations, 2017, Regulation 14.
+Q160: What is the legal requirement for child safety restraints in motor vehicles in India?
+A: Under Section 194B(2) of the MVA, securing children under 14 years of age with an approved child safety restraint system or seat belt is mandatory. Carrying unrestrained children carries a fine of ₹1,000.
+Source: Motor Vehicles Act, 1988, Section 194B(2); MoRTH Child Safety Regulations.
+Sub-Module 35.6: Registration, Scrappage, Tax & Specialized Procedures (Q161 – Q200)
+Q161: Can I drive my Delhi-registered private car in other parts of the National Capital Region (NCR)?
+A: Yes. Private cars registered in Delhi (DL numbers) can move freely across the NCR (Noida, Greater Noida, Ghaziabad, Faridabad, Gurugram, Sonipat) without paying additional local road taxes. However, they must adhere to local rules (including the 10-year diesel and 15-year petrol restrictions across the NCR).
+Source: National Capital Region Transport Directives.
+Q162: What is the Delhi Electric Vehicle (EV) Policy benefit for road tax?
+A: Under the Delhi EV Policy, battery electric vehicles (two-wheelers, cars, goods carriers) receive a 100% waiver of road taxes and registration fees when registered in the NCT of Delhi.
+Source: Delhi Electric Vehicle Policy; GNCTD Transport Department.
+Q163: How can I register a vehicle purchased through an official government auction in Delhi?
+A: Under Rule 57 of the CMVR, submit Form 32 within 30 days of taking possession, along with the auction order/certificate issued by the government authority, sale confirmation receipt, original or duplicate RC, and chassis pencil imprint.
+Source: Central Motor Vehicles Rules, 1989, Rule 57.
+Q164: Can I retain my old Delhi registration number when purchasing a new vehicle?
+A: Yes. The Delhi Transport Department allows owners to retain an existing registration mark when buying a new vehicle by applying for "Retention of Registration Mark" through the Vahan fancy number portal and paying the prescribed fee.
+Source: Delhi Motor Vehicles Rules (Number Retention Guidelines).
+Q165: What is the procedure if my vehicle's engine is replaced due to mechanical failure?
+A: Obtain an invoice and clearance certificate from the authorized service facility installing the replacement engine. Submit the vehicle for physical chassis/engine inspection at the RTO, along with Form 20 and proof of engine purchase, to update the new engine number on the RC.
+Source: Central Motor Vehicles Rules, 1989, Rule 54; MVA Section 52.
+Q166: Can I change the registered color of my car on the RC in Delhi?
+A: Yes. Submit a request to the Zonal Transport Office detailing the proposed color change. After receiving preliminary approval, paint the vehicle, present it for physical inspection at the RTO, and have the new color updated on the RC for a ₹100 fee. Painting a vehicle in military olive green or police color patterns is prohibited.
+Source: Motor Vehicles Act, 1988, Section 52; DMVR 1993.
+Q167: Are vintage motor vehicles subject to the 15-year scrappage rule in Delhi?
+A: Under the MoRTH Vintage Motor Vehicles Rules, vehicles older than 50 years maintained in their original condition (with no structural modifications) can be registered as "Vintage Motor Vehicles" (bearing special "XX VA YY 0000" series plates). They are permitted to ply for maintenance, exhibitions, rallies, and historical runs, but cannot be used for regular commercial or daily commuting.
+Source: CMVR Rules 92A–92H; MoRTH Notification G.S.R. 492(E).
+Q168: How do I register a vehicle as a Vintage Vehicle in Delhi?
+A: Apply for vintage registration on the Vahan portal under Form 20B. Upload proof of 50+ year age, original registration or importation documents, vintage insurance, and pay the ₹20,000 fee. The RTO inspects the vehicle before issuing a vintage registration certificate.
+Source: Central Motor Vehicles Rules, 1989, Rules 92A–92H.
+Q169: What is the fine for driving a vehicle without a functional speedometer in Delhi?
+A: Under Rule 117 of the CMVR, all motor vehicles must have a functional speedometer. Operating without a working speedometer carries a fine of ₹500 for a first offence and ₹1,500 for repeat offences under Section 177.
+Source: Central Motor Vehicles Rules, 1989, Rule 117; MVA Section 177.
+Q170: What is the rule for rear view mirrors on two-wheelers in Delhi?
+A: Under Rule 5 of the DMVR and Rule 125 of the CMVR, every two-wheeler must have two functional rear view mirrors (left and right). Riding without mirrors carries a fine of ₹500 under Section 177.
+Source: DMVR 1993, Rule 5; CMVR Rule 125.
+Q171: What is the fine for riding a motorcycle with a modified or cut handlebar?
+A: Modifying the handlebar outside manufacturer safety specifications alters the steering geometry, violating Section 52 of the MVA and carrying a fine of ₹5,000 under Section 182A(4).
+Source: Motor Vehicles Act, 1988, Section 52, 182A(4).
+Q172: What is an improvised motor vehicle ("Jugaad") and is it allowed in Delhi?
+A: Improvised vehicles built by coupling agricultural pumps, diesel generators, or non-certified assemblies to rickshaw carts or chassis ("jugaad") are prohibited from operating on public roads under Supreme Court orders. They are subject to immediate seizure under Section 39/192 of the MVA.
+Source: Supreme Court Directives; MVA Section 192.
+Q173: What is the fine for an unbuckled driver carrying a child on their lap in the front seat?
+A: This violates both seat belt mandates (Section 194B(1) - ₹1,000) and child restraint mandates (Section 194B(2) - ₹1,000), carrying combined fines of ₹2,000 and possible dangerous driving citations under Section 184.
+Source: Motor Vehicles Act, 1988, Section 184, 194B.
+Q174: Can traffic police issue a challan using automated photo or video evidence from a citizen?
+A: Yes. Under the Delhi Traffic Police Citizen Sentinel scheme and the Delhi Traffic Police Mobile App, citizens can upload timestamped, geolocated photos or videos of violations (e.g., parking on footpaths, red light jumping, driving on the wrong side). After verification by an officer, an e-challan is issued to the violator.
+Source: Delhi Traffic Police Citizen Sentinel Program.
+Q175: What is the legal penalty for disobeying a traffic police officer's hand signal or direction?
+A: Under Section 179(1) of the MVA, willfully disobeying any lawful direction given by an empowered police officer carries a fine of ₹2,000.
+Source: Motor Vehicles Act, 1988, Section 179(1).
+Q176: What is the penalty for refusing to stop when flagged down by a traffic police officer in Delhi?
+A: Refusing to stop or attempting to flee from an enforcement officer violates Section 179(1) (fine of ₹2,000) and can result in dangerous driving charges under Section 184 (fine up to ₹5,000, or imprisonment up to 1 year, or both).
+Source: Motor Vehicles Act, 1988, Section 179(1), 184.
+Q177: What is the fine for stopping a vehicle in a manner that obstructs traffic flow in Delhi?
+A: Stopping or abandoning a vehicle on a carriageway in a way that causes danger, obstruction, or undue inconvenience violates Section 122 of the MVA, carrying a fine of ₹500 for a first offence and ₹1,500 for repeat offences under Section 177, alongside towing charges.
+Source: Motor Vehicles Act, 1988, Section 122, 177.
+Q178: What is the penalty for reversing a motor vehicle dangerously on a highway in Delhi?
+A: Reversing a vehicle into an expressway or high-speed arterial corridor violates Regulation 16 of the Motor Vehicles (Driving) Regulations and Section 184 of the MVA (dangerous driving), carrying a fine of ₹1,000 to ₹5,000.
+Source: Motor Vehicles (Driving) Regulations, 2017; MVA Section 184.
+Q179: Is a commercial vehicle driver required to maintain a log book in Delhi?
+A: Under Rule 66 of the DMVR, 1993, drivers of commercial goods and passenger vehicles must maintain an up-to-date driver log book recording operational hours, origin, destination, and rest intervals. Failure to maintain or produce this log book carries a fine under Section 177.
+Source: Delhi Motor Vehicles Rules, 1993, Rule 66.
+Q180: What is the penalty for playing excessively loud music inside a car in Delhi?
+A: Operating high-decibel audio equipment that disturbs the peace or distracts other motorists violates Section 190(2) of the MVA (noise pollution) and Section 112 DMVR, carrying a fine of ₹10,000 for noise pollution or ₹500 to ₹1,500 under general rules.
+Source: Motor Vehicles Act, 1988, Section 190(2); DMVR 1993.
+Q181: Are display advertisements permitted on private vehicles in Delhi?
+A: Under Rule 27 of the DMVR, 1993, and municipal outdoor advertising guidelines, applying commercial advertisements or wraps to private vehicles without written permission from the State Transport Authority and municipal bodies is prohibited, carrying a fine of ₹500 to ₹1,500 under Section 177.
+Source: Delhi Motor Vehicles Rules, 1993, Rule 27; Delhi Outdoor Advertisement Policy.
+Q182: What is the rule for driving with headlights on during dense winter fog in Delhi?
+A: Under Rule 105 of the CMVR, drivers must use low-beam headlights and authorized amber fog lamps during fog or heavy rain. High beams reflect off water droplets, reducing visibility and creating glare for oncoming traffic.
+Source: Central Motor Vehicles Rules, 1989, Rule 105; Delhi Traffic Advisory.
+Q183: What is the penalty for leaving a vehicle unattended on an active railway crossing?
+A: Abandoning a vehicle on an active railway level crossing violates Section 184 of the MVA and railway safety legislation, carrying penalties up to ₹5,000 fine, imprisonment up to 1 year, and immediate vehicle impoundment.
+Source: Motor Vehicles Act, 1988, Section 184; Indian Railways Act.
+Q184: What is the minimum tread depth required for motor vehicle tires in India?
+A: Under Rule 95 of the CMVR, 1989, pneumatic tires fitted to motor vehicles must maintain a minimum tread depth of 1.6 mm for cars and two-wheelers across the tire circumference. Operating on bald or completely worn tires carries a fine under Section 177.
+Source: Central Motor Vehicles Rules, 1989, Rule 95.
+Q185: What is the penalty for driving a vehicle without an effective wiper system in the rain?
+A: Operating a vehicle with a broken, missing, or inoperable windshield wiper during rain or poor visibility violates Rule 101 of the CMVR, carrying a fine of ₹500 for a first offence and ₹1,500 for repeat offences under Section 177.
+Source: Central Motor Vehicles Rules, 1989, Rule 101; MVA Section 177.
+Q186: Can a police officer below the rank of Sub-Inspector issue a compoundable traffic challan in Delhi?
+A: Under notifications issued under Section 200 of the MVA, only police officers of the rank of Assistant Sub-Inspector (ASI) and above are authorized to compound traffic violations and accept compounding fees at the roadside. Head Constables can issue automated camera notices or check notices, but cannot adjudicate contested fines.
+Source: Delhi Traffic Police Compounding Authorization Orders.
+Q187: What is the legal procedure if an e-challan has already been paid online, but still appears as "Pending"?
+A: If a transaction succeeds but the portal still displays the notice as pending, the payment may be reconciling in the banking gateway. If it does not clear within 72 hours, submit a transaction verification query on echallan.parivahan.gov.in under "Check Payment Status" with your Bank Transaction ID, or email the payment receipt to helpdesk-echallan@gov.in.
+Source: MoRTH eChallan Technical Support Framework.
+Q188: What should I do if I sell my car and the buyer fails to transfer the RC, accumulating challans in my name?
+A: Under Section 50 of the MVA, a seller who completed Form 29 and Form 30 and retains proof of sale delivery can submit a formal representation to the Zonal Transport Office and Delhi Traffic Police with the signed sale contract and delivery receipt to request blacklisting of the vehicle record against the buyer's failure to transfer.
+Source: Motor Vehicles Act, 1988, Section 50; Judicial Precedents (Padmini v. State).
+Q189: What happens if a vehicle is caught plying after its registration has been formally suspended?
+A: Driving a vehicle while its registration certificate is suspended or cancelled violates Section 39/192 of the MVA, carrying a fine up to ₹5,000 for a first offence, and up to ₹10,000 or imprisonment up to 1 year for repeat offences, with immediate vehicle seizure under Section 207.
+Source: Motor Vehicles Act, 1988, Section 39, 192, 207.
+Q190: What is the fine for installing non-certified child booster seats in Delhi?
+A: Child restraint systems must meet specifications approved by the Bureau of Indian Standards (BIS) or relevant AIS codes under Section 194B(2). Non-compliant restraints carry a fine of ₹1,000.
+Source: Motor Vehicles Act, 1988, Section 194B(2).
+Q191: Can a driver be penalized for not having a physical insurance copy if they have an e-copy in DigiLocker?
+A: No. Under MoRTH circulars and Rule 139 of the CMVR, producing valid digital insurance through DigiLocker or mParivahan satisfies legal requirements. An officer issuing a fine solely for lack of a physical copy is acting contrary to statutory guidelines.
+Source: MoRTH Circular RT-11036/64/2017-MVL; CMVR Rule 139.
+Q192: What is the legal penalty for carrying flammable substances in a passenger car in Delhi?
+A: Transporting loose gasoline, kerosene, or volatile chemicals inside a passenger vehicle violates Section 184 (dangerous driving) and hazardous carriage regulations under Section 194(1), carrying fines from ₹1,000 to ₹20,000, alongside possible criminal prosecution.
+Source: Motor Vehicles Act, 1988, Section 184, 194(1).
+Q193: Can an auto-rickshaw in Delhi carry commercial freight or cargo?
+A: No. An auto-rickshaw licensed as a passenger vehicle (Three-Seater Rickshaw - TSR) cannot be used as a goods carriage. Using a passenger vehicle to haul commercial freight violates permit conditions under Section 66/192A of the MVA, carrying a fine of ₹10,000.
+Source: Motor Vehicles Act, 1988, Section 66, 192A.
+Q194: What is the fine for refusing to submit to a breath analyser test in Delhi?
+A: Under Section 203(6) of the MVA, refusing or failing to provide a breath specimen when directed by an authorized police officer permits the officer to arrest the driver without a warrant under Section 202, and the refusal is admissible as corroborative evidence of drunken driving in court under Section 185.
+Source: Motor Vehicles Act, 1988, Section 185, 202, 203.
+Q195: What is the statutory time limit for the police to file an Accident Information Report (AIR) in court?
+A: Under Section 159 of the MVA, the investigating police officer must submit the Accident Information Report (AIR / Form 54) to the Motor Accident Claims Tribunal (MACT) and insurance companies within 90 days of completing the investigation.
+Source: Motor Vehicles Act, 1988, Section 159.
+Q196: Can an owner contest an automated camera challan at a National Lok Adalat in Delhi?
+A: Yes. Owners can settle pending compoundable traffic challans at National Lok Adalats organized quarterly by the Delhi State Legal Services Authority (DSLSA). Owners download a digital appointment token from the DSLSA portal and appear before the Lok Adalat bench for summary disposal, waiver, or fine mitigation.
+Source: Delhi State Legal Services Authority (DSLSA) Lok Adalat Guidelines.
+Q197: What is the legal procedure if an RTO officer rejects a driving licence renewal without cause?
+A: Under Section 17 of the MVA, any person aggrieved by an order of a licensing authority refusing to issue, endorse, or renew a driving licence can file a statutory appeal with the prescribed appellate authority (State Transport Authority, Delhi) within 30 days of receiving the order.
+Source: Motor Vehicles Act, 1988, Section 17.
+Q198: Are electric scooters required to carry a PUCC in Delhi?
+A: No. Pure Battery Electric Vehicles (EVs) have zero tailpipe emissions and are exempt from obtaining a Pollution Under Control Certificate (PUCC).
+Source: Central Motor Vehicles Rules, 1989, Rule 115; MoRTH Directives.
+Q199: What is the penalty for driving a motor vehicle with an expired temporary permit?
+A: Plying a commercial transport vehicle after a temporary permit expires is treated as operating without a permit under Section 66/192A of the MVA, carrying a mandatory fine of ₹10,000, or imprisonment up to 6 months, or both.
+Source: Motor Vehicles Act, 1988, Section 66, 192A.
+Q200: What is the penalty for forging, altering, or displaying a fake registration mark in Delhi?
+A: Using a fraudulent, fake, or forged number plate to evade automated cameras or conceal identity is prosecuted under Section 468, 471, and 420 of the Indian Penal Code / relevant provisions of the Bharatiya Nyaya Sanhita (forgery and cheating), alongside Section 192 of the MVA. The vehicle is immediately seized, and the driver is arrested for criminal trial.
+Source: Indian Penal Code / Bharatiya Nyaya Sanhita; Motor Vehicles Act, 1988, Section 192.
+SOURCE METADATA:
+Module: Sub-Module 35.1 to 35.6 Comprehensive FAQ Matrix
+Verification: Verified Against MVA, CMVR, DMVR, and Delhi Traffic Police Tables
+Authority Level: Tier-1 Regulatory and Procedural
+Last Verified: September 23, 2026
+
+PART 36 — EDGE CASES, EXCEPTIONS & PROCEDURAL ANOMALIES
+36.1 Unregistered Cloned Plates / Algorithmic False Positives
+The Anomaly: A citizen receives an automated over-speeding or red-light e-challan accompanied by a camera capture showing a vehicle with an identical registration mark, but of a different make, model, or color.
+Statutory Procedure: File an identity fraud and vehicle cloning dispute via email to info@delhitrafficpolice.nic.in or directly at the Traffic Police Headquarters, Todapur. Submit:
+Vehicle Registration Certificate showing true make, model, and chassis number.
+Color photographs of the citizen’s genuine vehicle showing HSRP layout and color.
+Police verify the original high-resolution optical camera capture; if structural discrepancies exist, the challan is revoked and an alert is flagged across ANPR checkpoints to intercept the cloned vehicle.
+36.2 Expired Out-of-State Commercial Registrations
+The Anomaly: An out-of-state commercial transport vehicle enters Delhi with its home state fitness certificate or permit expired by 24 hours due to mechanical breakdowns.
+Enforcement Reality: The vehicle is treated as operating without a permit under Section 192A (₹10,000) and without fitness under Section 192 (₹2,000–₹5,000). The automated e-challan system does not recognize unilateral mechanical breakdown excuses without a registered police mechanical inspection diary entry.
+36.3 Driverless or Autonomous Parking Violations
+The Anomaly: Electric or luxury imported vehicles operating Level 2+ automated remote parking summon maneuvers obstructing traffic while the operator holds a remote key on the pavement.
+Enforcement Reality: The registered owner is held strictly liable under Section 122 (improper parking) and Section 180 (allowing unauthorized operation without physical control from the driver’s seat).
+
+
+[TABLE]
+Tier | Category | Sources Included | Weight / Precedence
+Tier 1 | Primary Statutes & Judicial Orders | Motor Vehicles Act, 1988; Motor Vehicles (Amendment) Act, 2019; CMVR 1989; DMVR 1993; Supreme Court / NGT ELV orders. | Highest statutory validity. Overrides executive circulars in conflict.
+Tier 2 | Primary Executive Portals | Delhi Traffic Police Web Portal (traffic.delhipolice.gov.in); MoRTH Parivahan Sewa (parivahan.gov.in); GNCTD Transport Portal (transport.delhi.gov.in). | Primary operational validity for procedures, active compounding fees, and system workflows.
+Tier 3 | Time-Bound Orders | Traffic Police Notifications under Section 115 MVA; CAQM Stage I–IV Orders; Section 144 CrPC / BNSS movement bans. | Conditional validity. Valid only during the specified operational window.
+Tier 4 | Secondary Informational | Press releases, FAQs without underlying legal notifications, citizen handbooks. | Supportive context only. Must yield to Tiers 1–3.
+[/TABLE]
+
+
+[TABLE]
+Sl | Violation Description | Applicable Legal Section / Rule | First Offence Penalty (₹) | Subsequent Offence Penalty (₹) | Adjudication Nature
+1 | Driving without a valid Driving Licence | Sec 3/181 MVA | ₹5,000 | ₹5,000 / Court Trial | Compoundable / Court Challan
+2 | Allowing unauthorized person/minor to drive | Sec 4/180 MVA | ₹5,000 | ₹5,000 / 3 Months Jail | Compoundable / Court Challan
+3 | Driving without valid Registration (RC) | Sec 39/192(1) MVA | ₹2,000 – ₹5,000 | ₹5,000 – ₹10,000 / 1 Yr Jail | Court Challan
+4 | Driving without valid Fitness Certificate | Sec 56/192 MVA | ₹2,000 – ₹5,000 | ₹5,000 – ₹10,000 | Court Challan
+5 | Plying vehicle without Permit / Violating Permit | Sec 66/192A MVA | ₹10,000 | ₹10,000 / 6 Months Jail | Court Challan
+6 | Driving without Third-Party Insurance | Sec 146/196 MVA | ₹2,000 | ₹4,000 / 3 Months Jail | Compoundable / Court Challan
+7 | Driving without valid PUCC (Pollution) | Sec 190(2) MVA | ₹10,000 + 3 Mo. DL Disq. | ₹10,000 + 3 Mo. DL Disq. | Court Challan
+8 | Over-speeding: Light Motor Vehicle (LMV) | Sec 112/183(1) MVA | ₹1,000 – ₹2,000 | ₹1,000 – ₹2,000 | Compoundable
+9 | Over-speeding: Medium/Heavy Vehicle | Sec 112/183(2) MVA | ₹2,000 – ₹4,000 | DL Impoundment (Sec 206) | Compoundable
+10 | Dangerous Driving (General) | Sec 184 MVA | ₹1,000 – ₹5,000 | ₹10,000 / 2 Yrs Jail | Court Challan
+11 | Jumping Red Light | Sec 184(a) MVA | ₹1,000 – ₹5,000 | ₹10,000 | Compoundable / Court
+12 | Using Hand-held Mobile Phone while Driving | Sec 184(c) MVA | ₹1,000 – ₹5,000 | ₹10,000 | Court Challan
+13 | Driving against Flow of Traffic (Wrong Way) | Sec 184(e) MVA | ₹1,000 – ₹5,000 | ₹10,000 | Court Challan
+14 | Drunken Driving (Blood alcohol $>30\text{mg}/100\text{ml}$) | Sec 185 MVA | Up to ₹10,000 / 6 Mo Jail | Up to ₹15,000 / 2 Yr Jail | Court Challan Exclusively
+15 | Driving while mentally/physically unfit | Sec 186 MVA | ₹1,000 | ₹2,000 | Court Challan
+16 | Racing or Trials of Speed on Public Roads | Sec 189 MVA | ₹5,000 / 3 Months Jail | ₹10,000 / 1 Year Jail | Court Challan
+17 | Juvenile Driving (Offence by Child) | Sec 199A MVA | ₹25,000 to Guardian + 3 Yr Jail + RC Cancel 1 Yr | ₹25,000 to Guardian + 3 Yr Jail + RC Cancel 1 Yr | Court Challan Exclusively
+18 | Driving without Protective Headgear (Helmet) | Sec 129/194D MVA | ₹1,000 + 3 Mo. DL Disq. | ₹1,000 + 3 Mo. DL Disq. | Compoundable
+19 | Pillion Rider without Helmet | Sec 129/194D MVA | ₹1,000 + 3 Mo. DL Disq. | ₹1,000 + 3 Mo. DL Disq. | Compoundable
+20 | Triple Riding on Two-Wheeler | Sec 128/194C MVA | ₹1,000 + 3 Mo. DL Disq. | ₹1,000 + 3 Mo. DL Disq. | Compoundable
+21 | Driving without wearing Seat Belt | Sec 138(3) CMVR / 194B(1) | ₹1,000 | ₹1,000 | Compoundable
+22 | Carrying children without child restraint/seatbelt | Sec 194B(2) MVA | ₹1,000 | ₹1,000 | Compoundable
+23 | Obstructing Emergency Vehicles (Ambulance/Fire) | Sec 194E MVA | ₹10,000 / 6 Months Jail | ₹10,000 / 6 Months Jail | Court Challan
+24 | Disobeying Police Orders / Refusing Info | Sec 179(1) MVA | ₹2,000 | ₹2,000 | Compoundable
+25 | Withholding Info / Refusing to Disclose | Sec 179(2) MVA | ₹2,000 | ₹2,000 | Compoundable
+26 | Overloading Goods Vehicle | Sec 113/194(1) MVA | ₹20,000 + ₹2,000/extra ton | ₹20,000 + ₹2,000/extra ton | Court Challan
+27 | Carrying passengers on Goods Carriage | Sec 194(2) MVA | ₹200 per passenger | ₹200 per passenger | Compoundable
+28 | Overloading Passenger Bus (Excess Occupants) | Sec 194A MVA | ₹200 per excess passenger | ₹200 per excess passenger | Compoundable
+29 | Improper / Obstructive Parking | Sec 122/177 MVA | ₹500 + Towing Charges | ₹1,500 + Towing Charges | Compoundable
+30 | Parking on Footpath or Cycle Track | Rule 15 DMVR / 177 | ₹500 | ₹1,500 | Compoundable
+31 | Plying in Non-Motorized Vehicle (NMV) Lane | Sec 115/194(1) MVA | ₹20,000 | ₹20,000 | Court Challan
+32 | Violating Mandatory Traffic Signs | Sec 119/177 MVA | ₹500 | ₹1,500 | Compoundable
+33 | Violating Stop Line at Intersection | Sec 119/177 MVA | ₹500 | ₹1,500 | Compoundable
+34 | Violating Yellow Box Junction | Sec 119/177 MVA | ₹500 | ₹1,500 | Compoundable
+35 | Using Pressure Horn / Multi-toned Horn | Rule 119 CMVR / 190(2) | ₹10,000 | ₹10,000 | Court Challan
+36 | Honking in Silence Zone (Hospital/School) | Rule 119 CMVR / 194F | ₹1,000 | ₹2,000 | Compoundable
+37 | Driving without Silencer / Defective Muffler | Sec 190(2) MVA | ₹10,000 | ₹10,000 | Court Challan
+38 | Use of Prohibited Tinted Glass / Black Film | Rule 100 CMVR / 177 | ₹500 (Removal on spot) | ₹1,500 | Compoundable
+39 | Defective / Improper / Fancy Number Plate | Rule 50 CMVR / 177 | ₹500 | ₹1,500 | Compoundable
+40 | Plying without High Security Registration Plate | Rule 50 CMVR / 177 | ₹500 (Notice under 39) | ₹1,500 | Compoundable
+41 | Driving without Rear View Mirror | Rule 5 DMVR / 177 | ₹500 | ₹1,500 | Compoundable
+42 | Operating Vehicle with Defective Wiper | Rule 101 CMVR / 177 | ₹500 | ₹1,500 | Compoundable
+43 | Operating without Functional Headlights/Tail-lights | Rule 105 CMVR / 177 | ₹500 | ₹1,500 | Compoundable
+44 | Driving with High Beam inside City Limits | Rule 106 CMVR / 177 | ₹500 | ₹1,500 | Compoundable
+45 | Unauthorized Red/Blue/Amber Flasher Beacon | Rule 108 CMVR / 177 | ₹500 (Seizure of beacon) | ₹1,500 | Compoundable
+46 | Unauthorized Sirens / Audio Signalling Device | Rule 119 CMVR / 194F | ₹1,000 | ₹2,000 | Compoundable
+47 | Plying End-of-Life Vehicle (Diesel $>10\text{y}$, Petrol $>15\text{y}$) | NGT / SC / Sec 39/192 | ₹10,000 + Impoundment | Permanent Scrapping Order | Court / Enforcement Direct
+48 | Commercial Vehicle No-Entry Violation | Sec 115/194(1) MVA | ₹20,000 | ₹20,000 | Court Challan
+49 | Carrying Protruding / Unsecured Loads | Rule 29 DMVR / 177 | ₹500 | ₹1,500 | Compoundable
+50 | Uncovered Building Material / Dust / Sand | Sec 115 / NGT / 194(1) | ₹20,000 | ₹20,000 | Court Challan
+51 | Operating without RUPD / LUPD Under-run Guards | Rule 125N CMVR / 177 | ₹500 | ₹1,500 | Compoundable
+52 | Auto/Taxi Refusal to Carry Passenger | Rule 11 DMVR / 177 | ₹500 | ₹1,500 | Compoundable
+53 | Auto/Taxi Overcharging / Demanding Excess Fare | Rule 11 DMVR / 177 | ₹500 | ₹1,500 | Compoundable
+54 | Auto/Taxi Plying with Defective / Tampered Meter | Rule 11 DMVR / 177 | ₹500 | ₹1,500 | Compoundable
+55 | Driver/Conductor not wearing Uniform / Badge | Rule 11 DMVR / 177 | ₹500 | ₹1,500 | Compoundable
+56 | Conductor operating without Conductor Licence | Sec 29/177 MVA | ₹500 | ₹1,500 | Compoundable
+57 | Smoking in Public Transport Vehicle | Rule 11 DMVR / 177 | ₹500 | ₹1,500 | Compoundable
+58 | Standing on Footboard / Running Board | Sec 123/177 MVA | ₹500 | ₹1,500 | Compoundable
+59 | Plying Modified Vehicle (Unauthorized Alteration) | Sec 52/182A(4) MVA | ₹5,000 per alteration | ₹5,000 per alteration | Court Challan
+60 | Plying Improvised Vehicle ("Jugaad") | Sec 39/192 MVA | ₹2,000 – ₹5,000 + Seizure | Court Confiscation | Court Challan
+61 | Touting / Soliciting Passengers Illegally | Sec 93/193 MVA | ₹2,000 – ₹5,000 | ₹5,000 / 1 Year Jail | Court Challan
+62 | Transporting Dangerous Goods without Precautions | Sec 194(1) MVA | ₹20,000 | ₹20,000 | Court Challan
+63 | Obstructing Flow of Traffic (Slow Driving in Fast Lane) | Sec 184 / Rule 17 DMVR | ₹500 | ₹1,500 | Compoundable
+64 | Reversing Vehicle Dangerously | Rule 17 DMVR / 177 | ₹500 | ₹1,500 | Compoundable
+65 | Overtaking from Wrong (Left) Side | Rule 17 DMVR / 177 | ₹500 | ₹1,500 | Compoundable
+66 | Failure to use Indicator while turning | Rule 18 DMVR / 177 | ₹500 | ₹1,500 | Compoundable
+67 | Playing Loud Music in Public Service Vehicle | Rule 11 DMVR / 177 | ₹500 | ₹1,500 | Compoundable
+68 | Commercial Advertisement without STA Approval | Rule 27 DMVR / 177 | ₹500 | ₹1,500 | Compoundable
+69 | Failure to maintain Driver Log Book (Commercial) | Rule 66 DMVR / 177 | ₹500 | ₹1,500 | Compoundable
+70 | General Infraction of Rules / First Default | Sec 177 MVA | ₹500 | ₹1,500 | Compoundable
+[/TABLE]
+
+
+[TABLE]
+Vehicle Class | Towing / Crane Charges (₹) | Custody / Storage Charges per 24 Hours (₹) | Authority
+Two-Wheeler (Motorcycle/Scooter) | ₹200 | ₹100 | GNCTD / Delhi Police
+Three-Wheeler / Auto-Rickshaw | ₹300 | ₹150 | GNCTD / Delhi Police
+Light Motor Vehicle (Car, LMV) | ₹500 | ₹200 | GNCTD / Delhi Police
+Medium Goods / Passenger Vehicles | ₹1,000 | ₹400 | GNCTD / Delhi Police
+Heavy Motor Vehicle (Truck/Bus) | ₹2,000 | ₹500 | GNCTD / Delhi Police
+[/TABLE]
+
+
+[TABLE]
+Road / Highway Stretch Description | LMV / Private Cars (km/h) | Two-Wheelers (km/h) | Transport / Commercial Buses / Trucks (km/h) | Gramin Sewa / TSR (Auto) (km/h)
+Delhi-Meerut Expressway (NCT Delhi stretch) | 70 | 60 | 60 | Prohibited
+Noida Toll Bridge (DND Flyway) | 70 | 60 | 50 | 40
+NH-44 (Singhu Border to Sanjay Gandhi Transport Nagar) | 70 | 60 | 60 | 40
+NH-44 (Sanjay Gandhi Transport Nagar to Mukarba Chowk) | 60 | 50 | 50 | 40
+Outer Ring Road (Modi Mill Flyway to IIT, Munirka, NH-48) | 60 | 50 | 50 | 40
+Ring Road (Ashram to Moti Bagh to Dhaula Kuan to ISBT) | 60 | 50 | 50 | 40
+Barapullah Elevated Corridor | 60 | 50 | Prohibited | Prohibited
+Airport Express Link / NH-48 (Dhaula Kuan to Rajokri) | 70 | 60 | 50 | 40
+Mathura Road (Neela Gumbad to Badarpur Border) | 50 | 50 | 40 | 40
+Vikas Marg (Laxmi Nagar to Karkari Mor) | 50 | 50 | 40 | 40
+Aurobindo Marg (AIIMS to Qutub Minar) | 50 | 50 | 40 | 40
+All Service Roads across Delhi | 30 | 30 | 30 | 30
+All Internal Roads in Residential Sectors/Markets | 30 | 30 | 30 | 30
+[/TABLE]
+
+
+[TABLE]
+Administrative Service Description | Statutory Government Fee (₹) | Late Fee / Penal Rider
+Learner's Licence Test Fee (per attempt) | ₹150 | N/A
+Issue of Learner's Licence (per category) | ₹150 | N/A
+Driving Licence Skill Test (per category) | ₹200 | N/A
+Issue of Permanent Driving Licence (Form 7) | ₹200 | Dispatch included
+Renewal of Driving Licence | ₹200 | ₹300 per year of delay
+Duplicate Driving Licence | ₹200 | N/A
+International Driving Permit (IDP) | ₹1,000 | N/A
+Addition of Vehicle Class to DL | ₹500 | Includes test fee
+Address Change in Driving Licence | ₹200 | N/A
+New Registration (Two-Wheeler) | ₹300 | Plus Road Tax
+New Registration (Private LMV / Car) | ₹600 | Plus Road Tax
+Transfer of Ownership (Two-Wheeler) | ₹150 | Delay: ₹100/month
+Transfer of Ownership (Private LMV) | ₹300 | Delay: ₹100/month
+Duplicate Registration Certificate (Two-Wheeler) | ₹150 | N/A
+Duplicate Registration Certificate (LMV) | ₹300 | N/A
+Hypothecation Addition / Endorsement (LMV) | ₹500 | N/A
+Hypothecation Termination (Cancellation) | ₹100 | N/A
+No Objection Certificate (NOC - Form 28) | ₹100 | N/A
+Fitness Inspection Test (Transport LMV) | ₹600 | N/A
+Fitness Inspection Test (Medium/Heavy HMV) | ₹1,000 | N/A
+Grant / Renewal of Fitness Certificate | ₹200 | ₹50 per day of delay
+[/TABLE]
