@@ -1,7 +1,8 @@
 import streamlit as st
 import requests
 
-API_URL = "https://delhi-traffic-rules-rag.onrender.com/ask"
+API_BASE_URL = "https://delhi-traffic-rules-rag.onrender.com"
+
 
 st.set_page_config(
     page_title="Delhi Traffic Assistant",
@@ -20,7 +21,7 @@ st.caption("AI-powered assistant for Delhi traffic rules, penalties and road saf
 # API Status
 # -----------------------------
 try:
-    response = requests.get(f"{API_URL}/", timeout=3)
+    response = requests.get(API_BASE_URL, timeout=10)
 
     if response.status_code == 200:
         st.success("API: Online")
@@ -109,14 +110,14 @@ if question:
 
         with st.spinner("Searching Delhi traffic rules..."):
 
-            response = requests.post(
-                f"{API_URL}/ask",
-                json={
-                    "query": question,
-                    "top_k": 5
-                },
-                timeout=60
-            )
+         response = requests.post(
+           f"{API_BASE_URL}/ask",
+           json={
+           "query": question,
+           "top_k": 5
+         },
+         timeout=180
+         )
 
         if response.status_code == 200:
 
